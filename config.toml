@@ -1,6 +1,6 @@
 baseURL = "https://peohp2308.github.io/FCJ-Workshop-Official/"
-relativeURLs = false
-canonifyURLs = false
+relativeURLs = true
+canonifyURLs = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -14,7 +14,7 @@ ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
   # Git hub repo link
-  editURL = ""
+  editURL = "https://github.com/PeoHP2308/FCJ-Workshop-Official"
   description = ""
   author = "thienlh@thienlu.com"
   showVisitedLinks = true

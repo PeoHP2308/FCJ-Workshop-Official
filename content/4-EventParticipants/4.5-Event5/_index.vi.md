@@ -91,8 +91,7 @@ Sự kiện đã cung cấp một bản đồ chi tiết và đầy đủ về b
 
 ## Một số hình ảnh khi tham gia sự kiện.
 
-![](/images/4-Events/Event1.1.jpg)
-![](/images/4-Events/Event1.2.jpg)
-![](/images/4-Events/Event1.3.jpg)
-![](/images/4-Events/Event1.4.jpg)
+![c](/images/4-Events/Event6.1.jpg)  
+![c](/images/4-Events/Event6.2.jpg) 
+
 

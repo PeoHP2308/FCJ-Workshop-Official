@@ -63,6 +63,6 @@ Sự kiện đã chỉ ra một hướng đi rõ ràng cho tương lai của vi�
 
 ## Một số hình ảnh khi tham gia sự kiện.
 
-![](/images/4-Events/Event6.1.jpg)  
-![](/images/4-Events/Event6.2.jpg)  
+![](images/4-Events/Event6.1.jpg)  
+![](images/4-Events/Event6.2.jpg)  
 
