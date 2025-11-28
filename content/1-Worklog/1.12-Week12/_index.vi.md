@@ -31,12 +31,10 @@ pre: " <b> 1.12. </b> "
 
     - Tiếp tục code những module được giao.
 
-  
 * **Thứ Tư (26/11/2025):**
 
     - Bàn giao code thô sơ cho leader xem và chỉnh sửa những sai sót, bổ sung trong code.
 
-  
 * **Thứ Năm (27/11/2025):**
 
     - Thực hiện Testing cho những module đã hoàn thành.

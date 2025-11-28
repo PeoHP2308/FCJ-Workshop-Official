@@ -28,6 +28,6 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 10:** [Reviewing and analyzing the project’s workflow](1.10-week10/)
 
-**Week 11:** [Làm công việc M...](1.11-week11/)
+**Week 11:** [Implement coding project & participate in AWS events](1.11-week11/)
 
-**Week 12:** [Làm công việc N...](1.12-week12/)
+**Week 12:** [Coding, testing modules & participating in AWS events](1.12-week12/)

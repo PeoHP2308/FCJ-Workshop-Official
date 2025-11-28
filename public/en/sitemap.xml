@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+                />
+  </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/</loc>
     <lastmod>2025-10-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -13,6 +26,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/FCJ-Workshop-Official/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.1-workshop-overview/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.1-workshop-overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.1-workshop-overview/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.1-prepare/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
                 />
   </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/1-worklog/1.1-week1/</loc>
@@ -145,6 +184,32 @@
                 href="http://localhost:1313/FCJ-Workshop-Official/1-worklog/"
                 />
   </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.2-create-interface-endpoint/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-endpoint/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.2-create-interface-endpoint/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.2-prerequiste/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.2-prerequiste/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.2-prerequiste/"
+                />
+  </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/2-proposal/</loc>
     <lastmod>2025-10-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -156,6 +221,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/FCJ-Workshop-Official/2-proposal/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
                 />
   </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/1-worklog/1.10-week10/</loc>
@@ -197,6 +275,19 @@
                 href="http://localhost:1313/FCJ-Workshop-Official/1-worklog/1.12-week12/"
                 />
   </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.3-s3-vpc/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.3-s3-vpc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.3-s3-vpc/"
+                />
+  </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/3-translatedblog/</loc>
     <lastmod>2025-10-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -208,6 +299,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/FCJ-Workshop-Official/3-translatedblog/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.4-s3-onprem/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/"
                 />
   </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/4-eventparticipants/4.1-event1/</loc>
@@ -301,17 +418,30 @@
                 href="http://localhost:1313/FCJ-Workshop-Official/4-eventparticipants/"
                 />
   </url><url>
-    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.1-workshop-overview/</loc>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/</loc>
     <lastmod>2025-10-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.1-workshop-overview/"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.1-workshop-overview/"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.5-policy/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.5-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.5-policy/"
                 />
   </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/</loc>
@@ -325,6 +455,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.6-cleanup/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/FCJ-Workshop-Official/vi/5-workshop/5.6-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/FCJ-Workshop-Official/5-workshop/5.6-cleanup/"
                 />
   </url><url>
     <loc>http://localhost:1313/FCJ-Workshop-Official/6-self-evaluation/</loc>

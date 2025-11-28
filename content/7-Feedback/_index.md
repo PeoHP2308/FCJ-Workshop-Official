@@ -50,20 +50,26 @@ In addition, having the opportunity to join internal training sessions is a big 
 
 - What are you **most satisfied with** during your internship?  
 
-  → The mentors and team admins are always ready to help and support.
+  → The mentors and team admins were always supportive and willing to help, which made tasks much easier to understand and complete.
 
 - What do you think the company **should improve** for future interns?
 
-  →
+  → The onboarding process could be improved to help interns get familiar with the environment and their tasks more quickly.
 
 - If you were to **recommend this internship** to your friends, would you do so? Why?  
 
-  → 
+  → Yes. The working environment is friendly, supportive, and provides good learning opportunities for both technical and soft skills.
 
 ### Suggestions & Expectations
 
 - Do you have any suggestions to improve the internship experience?
 
+→ No, I don't have any thing to say. It's perfect.
+
 - Would you like to continue this program in the future?
 
+→ Yes. I would be happy to join future programs if given the opportunity.
+
 - Other comments (feel free to share):
+
+→ Everything was well-organized, and the team was very helpful. Thank you for the experience.

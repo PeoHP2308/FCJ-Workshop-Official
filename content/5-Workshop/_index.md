@@ -6,29 +6,23 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Implementing Detailed Security and Access Control for Hybrid S3 Access
+# Secure Hybrid Access to S3 using VPC Endpoints
 
-#### Overview.
+#### Overview
 
-**Extended Lab Idea:**  
-This lab focuses on applying **Defense-in-Depth** security layers to ensure that only authenticated and authorized
-sources can access S3 resources through private connections **(PrivateLink/VPC Endpoint)**.
+**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
 
-**Lab Objectives:**  
-After completing this lab, you will be able to:
+In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
 
-- Configure an **Interface VPC Endpoint** to extend private S3 connectivity to an on-premises (simulated) environment.
-- Implement an **Endpoint Policy** to allow access to a specific S3 bucket only.
-- Apply an **S3 Bucket Policy** to restrict access based on the source IP address of the on-premises data center.
-- Demonstrate that **S3** access through endpoints is secured and strictly limited following the **Least Privilege** principle.
+You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
++ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
++ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
 
----
+#### Content
 
-#### Contents
-
-1. [Workshop Overview](5.1-Workshop-overview/)
-2. [Prerequisites](5.2-Prerequiste/)
-3. [Accessing S3 from VPC](5.3-S3-vpc/)
-4. [Accessing S3 from On-premises Datacenter](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (optional)](5.5-Policy/)
-6. [Resource Cleanup](5.6-Cleanup/)  
+1. [Workshop overview](5.1-Workshop-overview)
+2. [Prerequiste](5.2-Prerequiste/)
+3. [Access S3 from VPC](5.3-S3-vpc/)
+4. [Access S3 from On-premises](5.4-S3-onprem/)
+5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
+6. [Clean up](5.6-Cleanup/)

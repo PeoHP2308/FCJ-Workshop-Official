@@ -46,20 +46,26 @@ tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
 
 - Điều bạn **hài lòng nhất** trong thời gian thực tập?  
 
-  → Đó là các mentors và team admin luôn luôn sẵn sàng giúp đỡ.
+    → Các mentor và admin trong team luôn hỗ trợ và sẵn sàng giúp đỡ, giúp mình dễ dàng hiểu và hoàn thành các nhiệm vụ hơn.
 
 - Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
 
-  →
+    → Có thể cải thiện quy trình onboarding để hỗ trợ thực tập sinh làm quen nhanh hơn với môi trường và công việc.
 
 - Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao? 
 
-  → 
+    → Có. Môi trường làm việc thân thiện, hỗ trợ tốt và mang lại nhiều cơ hội học hỏi cả kỹ thuật lẫn kỹ năng mềm.
 
 ### Đề xuất & mong muốn
 
 - Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
 
+    → Không, mình không có góp ý gì. Mọi thứ đều rất tốt.
+
 - Bạn có muốn tiếp tục chương trình này trong tương lai?
 
+    → Có. Mình rất sẵn lòng tham gia nếu có cơ hội.
+
 - Góp ý khác (tự do chia sẻ):
+
+    → Mọi thứ được tổ chức tốt, và team hỗ trợ rất nhiệt tình. Cảm ơn vì trải nghiệm tuyệt vời này.
