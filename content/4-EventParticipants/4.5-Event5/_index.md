@@ -83,8 +83,10 @@ The event provided a detailed and comprehensive map of security on AWS, going be
 
 ## Event Photos.
 
-![](/images/4-Events/Event1.1.jpg)  
-![](/images/4-Events/Event1.2.jpg)  
-![](/images/4-Events/Event1.3.jpg)  
-![](/images/4-Events/Event1.4.jpg)
+![c](/images/4-Events/Event5.1.jpg)  
+![c](/images/4-Events/Event5.2.jpg)
+![c](/images/4-Events/Event5.3.jpg)
+![c](/images/4-Events/Event5.4.jpg)
+![c](/images/4-Events/Event5.5.jpg)
+![c](/images/4-Events/Event5.6.jpg) 
 
