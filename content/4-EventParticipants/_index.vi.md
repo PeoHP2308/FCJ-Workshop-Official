@@ -25,7 +25,7 @@ hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh k
 
 &emsp;**Tên sự kiện:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS
 
-&emsp;**Thời gian:** 8:30 AM – 12:00 AM ngày 15/11/2025
+&emsp;**Thời gian:** 8:30 AM – 11:30 AM ngày 15/11/2025
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
@@ -58,7 +58,7 @@ hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh k
 
 &emsp;**Tên sự kiện:** AWS Cloud Mastery Series #3 : Security on AWS
 
-&emsp;**Thời gian:** 8:30 AM - 12:00 PM ngày 05/12/2025
+&emsp;**Thời gian:** 8:30 AM - 12:00 PM ngày 29/11/2025
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
