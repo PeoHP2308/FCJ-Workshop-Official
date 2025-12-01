@@ -9,7 +9,7 @@ pre: " <b> 4.2. </b> "
 
 &emsp;**Date:** Saturday, November 15, 2025.
 
-&emsp;**Time:** 8:00 AM – 11:30 AM.
+&emsp;**Time:** 8:30 AM – 11:30 AM.
 
 &emsp;**Location:** AWS Vietnam Office.
 
@@ -57,21 +57,6 @@ After the coffee break, the focus shifted to GenAI via **Amazon Bedrock**, the h
 ### 11:30 AM | Finish & Lunch
 
 * Lunch Break (Self-arranged)
-
-
-## GENERAL ASSESSMENT AND NEXT STEPS
-
-**Assessment:**
-
-The morning session successfully provided a strong foundation for both pillars of AI on AWS: **SageMaker** as the tool for traditional/custom ML, and **Bedrock** as the center for rapid GenAI adoption. The practical demos helped attendees clearly visualize the application capabilities of these services.
-
-**Key Knowledge Acquired:** Understanding the end-to-end ML process on SageMaker and the core components of GenAI (FMs, RAG, Agents) within Bedrock.
-
-**Proposed Next Steps:**
-
-1.  **Hands-on with Bedrock:** Begin experimenting with **Prompt Engineering** using one of the Foundation Models in Bedrock (e.g., Claude or Titan) to build a prototype application.
-
-2.  **Explore SageMaker:** Delve deeper into the **MLOps features** of SageMaker, focusing on automating the deployment and monitoring of models.
 
 ## Event Photos.
 

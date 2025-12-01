@@ -68,22 +68,6 @@ IaC là nền tảng của DevOps hiện đại, đảm bảo tính nhất quán
 
 ---
 
-## ĐÁNH GIÁ CHUNG VÀ ỨNG DỤNG
-
-**Đánh giá:**
-Sự kiện đã bao quát toàn bộ vòng đời DevOps, từ văn hóa, quy trình CI/CD, quản lý hạ tầng bằng mã, đến vận hành hệ thống container và observability. Kiến thức được truyền đạt rõ ràng, kết hợp giữa lý thuyết (DevOps Principles, DORA metrics) và công cụ thực tế (CodePipeline, CDK, X-Ray).
-
-**Kiến thức Chính Thu được:**
-* Nắm vững các công cụ AWS CodeFamily để thiết lập pipeline CI/CD tự động.
-* Hiểu rõ ưu nhược điểm của CloudFormation và CDK trong IaC.
-* Phân biệt và ứng dụng các dịch vụ container (ECS, EKS).
-* Thiết lập hệ thống giám sát chủ động bằng CloudWatch và X-Ray.
-
-**Hành động Đề xuất (Next Steps):**
-1.  **Thực hành CI/CD:** Sử dụng **CodeCommit, CodeBuild, và CodePipeline** để tự động hóa việc triển khai cho dự án hiện tại (nếu có) hoặc một ứng dụng mẫu.
-2.  **Khám phá CDK:** Bắt đầu sử dụng **AWS CDK** để định nghĩa hạ tầng project thay vì sử dụng Console, tập trung vào việc tạo các **Constructs** đơn giản.
-3.  **Triển khai Observability:** Tích hợp **CloudWatch Logs** và thử nghiệm **AWS X-Ray** để theo dõi các chức năng (API calls) trong project nhằm áp dụng nguyên tắc giám sát ngay từ đầu.
-
 ## Một số hình ảnh khi tham gia sự kiện.
 
 ![](/images/4-Events/Event4.1.jpg)

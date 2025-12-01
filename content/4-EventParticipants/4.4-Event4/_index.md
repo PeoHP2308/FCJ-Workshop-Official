@@ -68,21 +68,6 @@ IaC is the foundation of modern DevOps, ensuring environment consistency and rep
 
 ---
 
-## GENERAL ASSESSMENT AND APPLICATION
-
-**Assessment:**
-The event covered the entire DevOps lifecycle, from culture, CI/CD process, infrastructure management as code, to container operations and observability. The knowledge delivered was clear, combining theory (DevOps Principles, DORA metrics) and practical tools (CodePipeline, CDK, X-Ray).
-
-**Key Knowledge Acquired:**
-* Mastery of the AWS CodeFamily tools for setting up automated CI/CD pipelines.
-* Clear understanding of the pros and cons of CloudFormation and CDK for IaC.
-* Ability to differentiate and apply container services (ECS, EKS).
-* Setting up proactive monitoring systems using CloudWatch and X-Ray.
-
-**Proposed Next Steps:**
-1.  **Practice CI/CD:** Utilize **CodeCommit, CodeBuild, and CodePipeline** to automate deployment for the current project (if applicable) or a sample application.
-2.  **Explore CDK:** Start using **AWS CDK** to define project infrastructure instead of the Console, focusing on creating simple **Constructs**.
-3.  **Implement Observability:** Integrate **CloudWatch Logs** and experiment with **AWS X-Ray** to trace function calls (API calls) within the project to apply monitoring principles from the start.
 ## Event Photos.
 
 ![](/images/4-Events/Event4.1.jpg)

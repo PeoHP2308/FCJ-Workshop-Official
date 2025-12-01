@@ -14,7 +14,7 @@ and useful knowledge, along with gifts and wonderful moments.
 
 &emsp;**Event Name:** AWS Cloud Day Vietnam 2025 & GenAI Track.
 
-&emsp;**Time:** 09:00 - 18/09/2025.
+&emsp;**Time:** 09:00 AM - 17:00 PM, Thursday December 18, 2025.
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City.
 
@@ -25,7 +25,7 @@ and useful knowledge, along with gifts and wonderful moments.
 
 &emsp;**Event Name:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS
 
-&emsp;**Time:** 8:30 AM – 12:00 AM ; Saturday, November 15, 2025
+&emsp;**Time:** 8:30 AM – 11:30 AM, Saturday, November 15, 2025
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
@@ -47,7 +47,7 @@ and useful knowledge, along with gifts and wonderful moments.
 
 &emsp;**Event Name:** AWS Cloud Mastery Series #2 : DevOps on AWS
 
-&emsp;**Time:** 8:30 AM – 5:00 PM ; Monday, November 17, 2025
+&emsp;**Time:** 8:30 AM – 17:00 PM ; Monday, November 17, 2025
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
@@ -69,7 +69,7 @@ and useful knowledge, along with gifts and wonderful moments.
 
 &emsp;**Event Name:** AWS for SAP Using Generative AI : SAP ABAP capabilities and Amazon Q Developer
 
-&emsp;**Time:** 13:00 PM – 5:00 PM ; Thursday, November 20, 2025
+&emsp;**Time:** 13:00 PM – 17:00 PM ; Thursday, November 20, 2025
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 

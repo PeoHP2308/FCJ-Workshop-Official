@@ -74,21 +74,6 @@ pre: " <b> 4.5. </b> "
 
 * **Tự động hóa Ứng phó:** Phát triển các **Playbook** (kịch bản ứng phó) tự động bằng **Lambda hoặc Step Functions** cho các sự cố phổ biến như khóa IAM bị lộ hoặc phát hiện malware trên EC2. Các bước quan trọng bao gồm **Snapshot, isolation (cách ly), và evidence collection (thu thập bằng chứng)**.
 
-
-## ĐÁNH GIÁ VÀ HÀNH ĐỘNG TIẾP THEO
-
-**Đánh giá:**
-
-Sự kiện đã cung cấp một bản đồ chi tiết và đầy đủ về bảo mật trên AWS, không chỉ dừng lại ở các dịch vụ riêng lẻ mà còn kết nối chúng trong một khung kiến trúc toàn diện (Well-Architected). Kiến thức đặc biệt có giá trị đối với các nhà phát triển/Ops để đảm bảo các hệ thống mới triển khai tuân thủ các tiêu chuẩn bảo mật cao nhất (Zero Trust).
-
-**Hành động Đề xuất (Next Steps):**
-
-1.  **Kiểm tra Dự án Hiện tại:** Áp dụng checklist của **Security Pillar** để đánh giá dự án đang code/triển khai. Đặc biệt tập trung vào IAM (Least Privilege) và Data Protection (Encryption).
- 
-2**Triển khai Detection-as-Code:** Tích hợp **CloudTrail** và **GuardDuty** vào môi trường phát triển/thử nghiệm. Bắt đầu định nghĩa các quy tắc cảnh báo bằng Code cho các hành vi bất thường.
- 
-3**Học tập Chuyên sâu:** Nghiên cứu thêm về **AWS Security Specialty Certification** để củng cố kiến thức về 5 trụ cột bảo mật.
-
 ## Một số hình ảnh khi tham gia sự kiện.
 
 ![c](/images/4-Events/Event5.1.jpg)  

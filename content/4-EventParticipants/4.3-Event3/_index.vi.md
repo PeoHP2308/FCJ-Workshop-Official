@@ -67,21 +67,6 @@ và sử dụng một cách chính xác.
   
 * Phần thực hành giúp củng cố kiến thức lý thuyết và hiểu rõ hơn về **thách thức kỹ thuật** khi đưa Agent vào sản xuất.
 
-
-## ĐÁNH GIÁ VÀ HÀNH ĐỘNG TIẾP THEO
-
-**Đánh giá:**
-
-Sự kiện đã thành công trong việc cung cấp một cái nhìn sâu sắc, từ cơ bản đến nâng cao (L300), về một trong những tính năng mạnh mẽ nhất của AWS GenAI: **Bedrock Agent**. Sự kết hợp giữa kiến thức nền tảng từ AWS và giải pháp tối ưu hóa từ đối tác CloudThinker mang lại giá trị thực tiễn cao, đặc biệt qua phần Hands-on Workshop.
-
-**Hành động đề xuất (Next Steps):**
-
-1.  **Thử nghiệm Bedrock Agent:** Xây dựng một Agent đơn giản để tự động hóa một tác vụ nghiệp vụ nhỏ (ví dụ: tra cứu dữ liệu từ DynamoDB hoặc gọi một API nội bộ) để củng cố kiến thức về **Action Groups**.
-
-2.  **Nghiên cứu Tối ưu hóa Context:** Tìm hiểu sâu hơn về các kỹ thuật tối ưu hóa ngữ cảnh và prompt engineering nâng cao (như đã được trình bày bởi CloudThinker) để áp dụng vào các dự án GenAI hiện có.
-
-3.  **Khám phá MLOps cho Agent:** Nghiên cứu cách **giám sát và quản lý vòng đời** của Bedrock Agent (AgentOps), bao gồm việc cập nhật Tools và mô hình Nền tảng.
-
 ## Một số hình ảnh khi tham gia sự kiện.
 
 ![](/images/4-Events/Event1.1.jpg)

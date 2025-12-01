@@ -39,47 +39,40 @@ pre: " <b> 4.5. </b> "
 ### 1. Security Foundation & Core Principles
 
 * **Core Principles:** Emphasis on the necessity of **Least Privilege**, **Zero Trust** (never trust, always verify), and **Defense in Depth** (layered defense).
+
 * **Shared Responsibility Model:** Clarifying the boundary of responsibility: AWS is responsible for the security **of the Cloud** (infrastructure, physical), while the Customer is responsible for security **in the Cloud** (data, IAM, configuration).
 
 ### 2. Pillar 1: Identity & Access Management (IAM)
 
 * **Modern Architecture:** Avoid using **long-term credentials** (long-lived Access Keys) for users. Prioritize **Roles** for services and **IAM Identity Center** (SSO) for users.
+
 * **Multi-Account Control:** Apply **Service Control Policies (SCPs)** at the AWS Organizations level and **Permission Boundaries** to set maximum limits for delegated permissions.
+
 * **Mini Demo:** Demonstration of using **Access Analyzer** and the policy simulator tool to verify and validate access rights before deployment.
 
 ### 3. Pillar 2: Detection
 
 * **Continuous Monitoring:** Utilize **CloudTrail** (at the Organization level) to log all API actions, **GuardDuty** for ML-powered abnormal threat detection, and **Security Hub** to aggregate findings.
+
 * **Detection-as-Code:** Defining detection rules as code (e.g., Lambda, CloudFormation) to automate deployment and management.
 
 ### 4. Pillar 3: Infrastructure Protection
 
 * **Network Segmentation:** Separate application tiers (Web, App, DB) using **VPC segmentation**. Clearly distinguish the roles of **Security Groups** (stateful) and **NACLs** (stateless).
+
 * **Perimeter Defense:** Deploy **WAF** (Web Application Firewall) and **Shield** to protect applications against DDoS and Layer 7 attacks.
 
 ### 5. Pillar 4: Data Protection
 
 * **Encryption:** Ensure data is encrypted both **at-rest** (stored in S3, EBS, RDS) and **in-transit** (transmitted via TLS/SSL).
+
 * **Key and Secrets Management:** Use **KMS (Key Management Service)** to manage primary encryption keys, control key policies, and key rotation. Use **Secrets Manager** to store and automatically **rotate** secrets (database passwords, API keys).
 
 ### 6. Pillar 5: Incident Response
 
 * **IR Lifecycle:** Guidance on adhering to the AWS standard lifecycle (Prepare, Detect, Respond, Recover).
+
 * **Response Automation:** Develop automated **Playbooks** using **Lambda or Step Functions** for common incidents like compromised IAM keys or EC2 malware detection. Key steps include **Snapshot, isolation, and evidence collection**.
-
-## ASSESSMENT AND NEXT STEPS
-
-**Assessment:**
-
-The event provided a detailed and comprehensive map of security on AWS, going beyond individual services to connect them within a holistic architectural framework (Well-Architected). The knowledge is particularly valuable for developers/Ops to ensure that newly deployed systems adhere to the highest security standards (Zero Trust).
-
-**Proposed Next Steps:**
-
-1.  **Current Project Audit:** Apply the **Security Pillar** checklist to assess the project currently being coded/deployed. Focus especially on IAM (Least Privilege) and Data Protection (Encryption).
-
-2.  **Implement Detection-as-Code:** Integrate **CloudTrail** and **GuardDuty** into the development/testing environment. Begin defining alerting rules as code for anomalous behavior.
-
-3.  **Advanced Learning:** Research the **AWS Security Specialty Certification** to consolidate knowledge on the 5 security pillars.
 
 ## Event Photos.
 

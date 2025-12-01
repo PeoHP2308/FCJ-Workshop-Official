@@ -10,7 +10,7 @@ pre: " <b> 4.2. </b> "
 
 &emsp;**Ngày:** Thứ Bảy, 15 tháng 11, 2025
 
-&emsp;**Thời gian:** 8:00 AM – 11:30 AM
+&emsp;**Thời gian:** 8:30 AM – 11:30 AM
 
 &emsp;**Địa điểm:** Văn phòng AWS Vietnam
 
@@ -58,21 +58,6 @@ Sau giờ nghỉ giải lao, trọng tâm chuyển sang GenAI thông qua **Amazo
 ### 11:30 AM | Kết thúc & Ăn trưa
 
 * Lunch Break (Self-arranged)
-
-
-## ĐÁNH GIÁ CHUNG VÀ HÀNH ĐỘNG TIẾP THEO
-
-**Đánh giá:**
-
-Phiên sáng cung cấp một nền tảng vững chắc cho cả hai trụ cột của AI trên AWS: **SageMaker** là công cụ cho ML truyền thống/tùy chỉnh và **Bedrock** là trung tâm cho việc áp dụng GenAI nhanh chóng. Các buổi demo thực tế đã giúp người tham dự hình dung rõ ràng về khả năng ứng dụng của các dịch vụ này.
-
-**Kiến thức Chính Thu được:** Nắm được quy trình ML đầu cuối trên SageMaker và các thành phần cốt lõi của GenAI (FMs, RAG, Agents) trong Bedrock.
-
-**Hành động Đề xuất (Next Steps):**
-
-1.  **Thực hành với Bedrock:** Bắt đầu thử nghiệm với **Prompt Engineering** sử dụng một trong các Foundation Model trong Bedrock (ví dụ: Claude hoặc Titan) để xây dựng ứng dụng thử nghiệm.
-
-2.  **Khám phá SageMaker:** Tìm hiểu sâu hơn về tính năng **MLOps** của SageMaker, tập trung vào việc tự động hóa quá trình triển khai (deployment) và giám sát mô hình.
 
 ## Một số hình ảnh khi tham gia sự kiện.
 

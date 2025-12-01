@@ -69,21 +69,6 @@ understand and utilize them.
   
 * The practical session reinforced theoretical knowledge and provided a better understanding of the **technical challenges** when moving Agents to production.
 
-
-## ASSESSMENT AND NEXT STEPS
-
-**Assessment:**
-
-The event successfully delivered a deep dive, from foundational to advanced (L300), into one of the most powerful features of AWS GenAI: the **Bedrock Agent**. The combination of core AWS knowledge and optimization solutions from the partner, CloudThinker, offered high practical value, particularly through the Hands-on Workshop.
-
-**Proposed Next Steps:**
-
-1.  **Experiment with Bedrock Agent:** Build a simple Agent to automate a small business task (e.g., querying data from DynamoDB or calling an internal API) to solidify knowledge of **Action Groups**.
-
-2.  **Research Context Optimization:** Delve deeper into advanced context optimization and prompt engineering techniques (as presented by CloudThinker) for application in existing GenAI projects.
-
-3.  **Explore MLOps for Agents:** Investigate how to **monitor and manage the lifecycle** of a Bedrock Agent (AgentOps), including updating Tools and Foundation Models.
-
 ## Event Photos.
 
 ![](/images/4-Events/Event1.1.jpg)  
