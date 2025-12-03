@@ -30,7 +30,7 @@ pre: " <b> 1.3. </b> "
   
 * **Thứ 3 (23/09/2025):** 
 
-   - **Second random AWS blog** translation attempt.
+   - Thử dịch blog **ngẫu nhiên* thứ 2.
   
 * **Thứ 4 (24/09/2025):**
 

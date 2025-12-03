@@ -31,7 +31,7 @@ pre: " <b> 1.3. </b> "
 
 * **Tuesday (23/09/2025):**
 
-   - Completed translation of the **second blog**.
+   - **Second random AWS blog** translation attempt.
 
 * **Wednesday (24/09/2025):**
 
