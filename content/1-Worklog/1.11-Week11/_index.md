@@ -9,6 +9,7 @@ pre: " <b> 1.11. </b> "
 ### Week 11 Objectives:
 
 * Execute the coding project.
+
 * Attend AWS Events at the office.
 
 ### Tasks to be carried out this week:

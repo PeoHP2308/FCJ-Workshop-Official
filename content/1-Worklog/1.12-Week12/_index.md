@@ -9,6 +9,7 @@ pre: " <b> 1.12. </b> "
 ### Week 12 Objectives:
 
 * Code the assigned modules.
+
 * Leader assigned the tasks: System Foundation & Testing.
 
 ### Tasks to be Implemented This Week:

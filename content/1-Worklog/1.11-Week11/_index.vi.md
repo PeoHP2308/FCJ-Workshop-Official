@@ -9,6 +9,7 @@ pre: " <b> 1.11. </b> "
 ### Mục tiêu tuần 11:
 
 * Thực hiện coding project.
+
 * Lên văn phòng dự các Event của AWS.
 
 ### Các công việc cần triển khai trong tuần này:

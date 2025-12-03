@@ -9,6 +9,7 @@ pre: " <b> 1.12. </b> "
 ### Mục tiêu tuần 12:
 
 * Code những module được giao.
+
 * Leader giao việc System Foundation & Testing
 
 ### Các công việc cần triển khai trong tuần này:
