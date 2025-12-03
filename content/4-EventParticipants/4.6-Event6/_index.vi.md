@@ -57,6 +57,7 @@ Phần trọng tâm của sự kiện đi sâu vào cách Amazon Q hỗ trợ tr
 
 ## Một số hình ảnh khi tham gia sự kiện.
 
-![](images/4-Events/Event6.1.jpg)  
-![](images/4-Events/Event6.2.jpg)  
+![](/images/4-Events/Event6.1.jpg)  
+![](/images/4-Events/Event6.2.jpg)  
+
 
