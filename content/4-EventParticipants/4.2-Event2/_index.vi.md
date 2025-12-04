@@ -8,7 +8,7 @@ pre: " <b> 4.2. </b> "
 
 # BÀI THU HOẠCH SỰ KIỆN: AI/ML/GenAI on AWS
 
-&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS
+&emsp;**Sự kiện:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS
 
 &emsp;**Ngày:** Thứ Bảy, 15 tháng 11, 2025.
 

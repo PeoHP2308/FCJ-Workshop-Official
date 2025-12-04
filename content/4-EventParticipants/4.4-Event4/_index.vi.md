@@ -8,7 +8,7 @@ pre: " <b> 4.4. </b> "
 
 # BÀI THU HOẠCH SỰ KIỆN: DEVOPS ON AWS
 
-&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #2 : DevOps on AWS.
+&emsp;**Sự kiện:** AWS Cloud Mastery Series #2 : DevOps on AWS.
 
 &emsp;**Ngày:** Thứ Hai, 17 tháng 11, 2025.
 

@@ -8,13 +8,13 @@ pre: " <b> 4.1. </b> "
 
 # Bài thu hoạch “AWS Cloud Day Vietnam 2025 & GenAI Track”
 
-&emsp;**Event:** AWS Vietnam Cloud Day.
+&emsp;**Sự kiện:** AWS Vietnam Cloud Day.
 
-&emsp;**Date:** Thursday, September 18, 2025.
+&emsp;**Ngày:** Thursday, September 18, 2025.
 
-&emsp;**Time:** 9:00 AM – 17:00 PM (GMT+7).
+&emsp;**Thời gian:** 9:00 AM – 17:00 PM (GMT+7).
 
-&emsp;**Location:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City.
+&emsp;**Địa điểm:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City.
 
 
 ### Mục Đích Của Sự Kiện.
