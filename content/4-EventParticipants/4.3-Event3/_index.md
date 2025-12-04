@@ -8,7 +8,15 @@ pre: " <b> 4.3. </b> "
 
 # EVENT REPORT: FOCUS ON AWS BEDROCK AGENT AND AGENTIC WORKFLOW
 
-**Event Objective:** To provide in-depth knowledge on building and operating automated workflows (Agentic Workflows) 
+&emsp;**Event:** Building Agentic AI & Context Optimization with Amazon Bedrock.
+
+&emsp;**Date:** Friday, December 5, 2025.
+
+&emsp;**Time:** 8:30 AM – 12:00 PM (GMT+7).
+
+&emsp;**Location:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City.
+
+&emsp;**Event Objective:** To provide in-depth knowledge on building and operating automated workflows (Agentic Workflows) 
 using **AWS Bedrock Agent** and to introduce optimization solutions from the partner, CloudThinker.
 
 

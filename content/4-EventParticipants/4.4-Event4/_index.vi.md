@@ -8,11 +8,13 @@ pre: " <b> 4.4. </b> "
 
 # BÀI THU HOẠCH SỰ KIỆN: DEVOPS ON AWS
 
-&emsp;**Ngày:** Thứ Hai, 17 tháng 11, 2025
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #2 : DevOps on AWS.
 
-&emsp;**Thời gian:** 8:30 AM – 5:00 PM
+&emsp;**Ngày:** Thứ Hai, 17 tháng 11, 2025.
 
-&emsp;**Địa điểm:** Văn phòng AWS
+&emsp;**Thời gian:** 8:30 AM – 5:00 PM.
+
+&emsp;**Địa điểm:** Văn phòng AWS Vietnam, Tòa nhà Bitexco Financial Tower, Quận 1, TP.HCM.
 
 &emsp;**Mục tiêu sự kiện:** Cung cấp kiến thức toàn diện về Văn hóa DevOps, các nguyên tắc, chỉ số hiệu suất, và bộ công cụ dịch vụ DevOps của AWS để xây dựng quy trình CI/CD, IaC, và Observability.
 

@@ -8,11 +8,13 @@ pre: " <b> 4.2. </b> "
 
 # BÀI THU HOẠCH SỰ KIỆN: AI/ML/GenAI on AWS
 
-&emsp;**Ngày:** Thứ Bảy, 15 tháng 11, 2025
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS
 
-&emsp;**Thời gian:** 8:30 AM – 11:30 AM
+&emsp;**Ngày:** Thứ Bảy, 15 tháng 11, 2025.
 
-&emsp;**Địa điểm:** Văn phòng AWS Vietnam
+&emsp;**Thời gian:** 8:30 AM – 11:30 AM.
+
+&emsp;**Địa điểm:** Văn phòng AWS Vietnam, Tòa nhà Bitexco Financial Tower, Quận 1, TP.HCM.
 
 &emsp;**Mục tiêu sự kiện:** Cung cấp kiến thức cơ bản đến nâng cao về các dịch vụ AI/ML và AI Tạo sinh (GenAI) trên nền tảng Amazon Web Services (AWS).
 

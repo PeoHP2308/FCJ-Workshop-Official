@@ -7,11 +7,13 @@ pre: " <b> 4.2. </b> "
 ---
 # EVENT REPORT: AI/ML/GenAI on AWS
 
+&emsp;**Event:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS
+
 &emsp;**Date:** Saturday, November 15, 2025.
 
 &emsp;**Time:** 8:30 AM – 11:30 AM.
 
-&emsp;**Location:** AWS Vietnam Office.
+&emsp;**Location:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City.
 
 &emsp;**Event Objective:** To provide foundational to advanced knowledge on AI/ML and Generative AI (GenAI) services on the Amazon Web Services (AWS) platform.
 

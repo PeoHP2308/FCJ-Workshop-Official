@@ -8,11 +8,13 @@ pre: " <b> 4.4. </b> "
 
 # EVENT REPORT: DEVOPS ON AWS
 
-&emsp;**Date:** Monday, November 17, 2025
+&emsp;**Event Name:** AWS Cloud Mastery Series #2 : DevOps on AWS.
 
-&emsp;**Time:** 8:30 AM – 5:00 PM
+&emsp;**Date:** Monday, November 17, 2025.
 
-&emsp;**Location:** AWS Office
+&emsp;**Time:** 8:30 AM – 5:00 PM.
+
+&emsp;**Location:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City.
 
 &emsp;**Event Objective:** To provide comprehensive knowledge on DevOps Culture, principles, performance metrics, and the suite of AWS DevOps services for building CI/CD pipelines, IaC, and Observability.
 

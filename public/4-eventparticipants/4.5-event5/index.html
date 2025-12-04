@@ -15,21 +15,21 @@
     <title>Event 5 :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1764418966" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1764418966" rel="stylesheet">
-    <link href="../../css/hybrid.css?1764418966" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1764418966" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1764418966" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1764418966" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1764418966" rel="stylesheet">
-    <link href="../../css/theme.css?1764418966" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1764418966" rel="stylesheet">
+    <link href="../../css/nucleus.css?1764819020" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1764819020" rel="stylesheet">
+    <link href="../../css/hybrid.css?1764819020" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1764819020" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1764819020" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1764819020" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1764819020" rel="stylesheet">
+    <link href="../../css/theme.css?1764819020" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1764819020" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1764418966" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1764819020" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1764418966"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1764819020"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1764418966"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1764418966"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1764819020"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1764819020"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/FCJ-Workshop-Official\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1764418966"></script>
+<script type="text/javascript" src="../../js/search.js?1764819020"></script>
  
   </div>
 
@@ -969,7 +969,6 @@
         <li><a href="#6-pillar-5-incident-response">6. Pillar 5: Incident Response</a></li>
       </ul>
     </li>
-    <li><a href="#assessment-and-next-steps">ASSESSMENT AND NEXT STEPS</a></li>
     <li><a href="#event-photos">Event Photos.</a></li>
   </ul>
 </nav></div>
@@ -1053,50 +1052,61 @@
 <h2 id="in-depth-knowledge-by-the-5-pillars">IN-DEPTH KNOWLEDGE BY THE 5 PILLARS</h2>
 <h3 id="1-security-foundation--core-principles">1. Security Foundation &amp; Core Principles</h3>
 <ul>
-<li><strong>Core Principles:</strong> Emphasis on the necessity of <strong>Least Privilege</strong>, <strong>Zero Trust</strong> (never trust, always verify), and <strong>Defense in Depth</strong> (layered defense).</li>
-<li><strong>Shared Responsibility Model:</strong> Clarifying the boundary of responsibility: AWS is responsible for the security <strong>of the Cloud</strong> (infrastructure, physical), while the Customer is responsible for security <strong>in the Cloud</strong> (data, IAM, configuration).</li>
+<li>
+<p><strong>Core Principles:</strong> Emphasis on the necessity of <strong>Least Privilege</strong>, <strong>Zero Trust</strong> (never trust, always verify), and <strong>Defense in Depth</strong> (layered defense).</p>
+</li>
+<li>
+<p><strong>Shared Responsibility Model:</strong> Clarifying the boundary of responsibility: AWS is responsible for the security <strong>of the Cloud</strong> (infrastructure, physical), while the Customer is responsible for security <strong>in the Cloud</strong> (data, IAM, configuration).</p>
+</li>
 </ul>
 <h3 id="2-pillar-1-identity--access-management-iam">2. Pillar 1: Identity &amp; Access Management (IAM)</h3>
 <ul>
-<li><strong>Modern Architecture:</strong> Avoid using <strong>long-term credentials</strong> (long-lived Access Keys) for users. Prioritize <strong>Roles</strong> for services and <strong>IAM Identity Center</strong> (SSO) for users.</li>
-<li><strong>Multi-Account Control:</strong> Apply <strong>Service Control Policies (SCPs)</strong> at the AWS Organizations level and <strong>Permission Boundaries</strong> to set maximum limits for delegated permissions.</li>
-<li><strong>Mini Demo:</strong> Demonstration of using <strong>Access Analyzer</strong> and the policy simulator tool to verify and validate access rights before deployment.</li>
+<li>
+<p><strong>Modern Architecture:</strong> Avoid using <strong>long-term credentials</strong> (long-lived Access Keys) for users. Prioritize <strong>Roles</strong> for services and <strong>IAM Identity Center</strong> (SSO) for users.</p>
+</li>
+<li>
+<p><strong>Multi-Account Control:</strong> Apply <strong>Service Control Policies (SCPs)</strong> at the AWS Organizations level and <strong>Permission Boundaries</strong> to set maximum limits for delegated permissions.</p>
+</li>
+<li>
+<p><strong>Mini Demo:</strong> Demonstration of using <strong>Access Analyzer</strong> and the policy simulator tool to verify and validate access rights before deployment.</p>
+</li>
 </ul>
 <h3 id="3-pillar-2-detection">3. Pillar 2: Detection</h3>
 <ul>
-<li><strong>Continuous Monitoring:</strong> Utilize <strong>CloudTrail</strong> (at the Organization level) to log all API actions, <strong>GuardDuty</strong> for ML-powered abnormal threat detection, and <strong>Security Hub</strong> to aggregate findings.</li>
-<li><strong>Detection-as-Code:</strong> Defining detection rules as code (e.g., Lambda, CloudFormation) to automate deployment and management.</li>
+<li>
+<p><strong>Continuous Monitoring:</strong> Utilize <strong>CloudTrail</strong> (at the Organization level) to log all API actions, <strong>GuardDuty</strong> for ML-powered abnormal threat detection, and <strong>Security Hub</strong> to aggregate findings.</p>
+</li>
+<li>
+<p><strong>Detection-as-Code:</strong> Defining detection rules as code (e.g., Lambda, CloudFormation) to automate deployment and management.</p>
+</li>
 </ul>
 <h3 id="4-pillar-3-infrastructure-protection">4. Pillar 3: Infrastructure Protection</h3>
 <ul>
-<li><strong>Network Segmentation:</strong> Separate application tiers (Web, App, DB) using <strong>VPC segmentation</strong>. Clearly distinguish the roles of <strong>Security Groups</strong> (stateful) and <strong>NACLs</strong> (stateless).</li>
-<li><strong>Perimeter Defense:</strong> Deploy <strong>WAF</strong> (Web Application Firewall) and <strong>Shield</strong> to protect applications against DDoS and Layer 7 attacks.</li>
+<li>
+<p><strong>Network Segmentation:</strong> Separate application tiers (Web, App, DB) using <strong>VPC segmentation</strong>. Clearly distinguish the roles of <strong>Security Groups</strong> (stateful) and <strong>NACLs</strong> (stateless).</p>
+</li>
+<li>
+<p><strong>Perimeter Defense:</strong> Deploy <strong>WAF</strong> (Web Application Firewall) and <strong>Shield</strong> to protect applications against DDoS and Layer 7 attacks.</p>
+</li>
 </ul>
 <h3 id="5-pillar-4-data-protection">5. Pillar 4: Data Protection</h3>
 <ul>
-<li><strong>Encryption:</strong> Ensure data is encrypted both <strong>at-rest</strong> (stored in S3, EBS, RDS) and <strong>in-transit</strong> (transmitted via TLS/SSL).</li>
-<li><strong>Key and Secrets Management:</strong> Use <strong>KMS (Key Management Service)</strong> to manage primary encryption keys, control key policies, and key rotation. Use <strong>Secrets Manager</strong> to store and automatically <strong>rotate</strong> secrets (database passwords, API keys).</li>
+<li>
+<p><strong>Encryption:</strong> Ensure data is encrypted both <strong>at-rest</strong> (stored in S3, EBS, RDS) and <strong>in-transit</strong> (transmitted via TLS/SSL).</p>
+</li>
+<li>
+<p><strong>Key and Secrets Management:</strong> Use <strong>KMS (Key Management Service)</strong> to manage primary encryption keys, control key policies, and key rotation. Use <strong>Secrets Manager</strong> to store and automatically <strong>rotate</strong> secrets (database passwords, API keys).</p>
+</li>
 </ul>
 <h3 id="6-pillar-5-incident-response">6. Pillar 5: Incident Response</h3>
 <ul>
-<li><strong>IR Lifecycle:</strong> Guidance on adhering to the AWS standard lifecycle (Prepare, Detect, Respond, Recover).</li>
-<li><strong>Response Automation:</strong> Develop automated <strong>Playbooks</strong> using <strong>Lambda or Step Functions</strong> for common incidents like compromised IAM keys or EC2 malware detection. Key steps include <strong>Snapshot, isolation, and evidence collection</strong>.</li>
+<li>
+<p><strong>IR Lifecycle:</strong> Guidance on adhering to the AWS standard lifecycle (Prepare, Detect, Respond, Recover).</p>
+</li>
+<li>
+<p><strong>Response Automation:</strong> Develop automated <strong>Playbooks</strong> using <strong>Lambda or Step Functions</strong> for common incidents like compromised IAM keys or EC2 malware detection. Key steps include <strong>Snapshot, isolation, and evidence collection</strong>.</p>
+</li>
 </ul>
-<h2 id="assessment-and-next-steps">ASSESSMENT AND NEXT STEPS</h2>
-<p><strong>Assessment:</strong></p>
-<p>The event provided a detailed and comprehensive map of security on AWS, going beyond individual services to connect them within a holistic architectural framework (Well-Architected). The knowledge is particularly valuable for developers/Ops to ensure that newly deployed systems adhere to the highest security standards (Zero Trust).</p>
-<p><strong>Proposed Next Steps:</strong></p>
-<ol>
-<li>
-<p><strong>Current Project Audit:</strong> Apply the <strong>Security Pillar</strong> checklist to assess the project currently being coded/deployed. Focus especially on IAM (Least Privilege) and Data Protection (Encryption).</p>
-</li>
-<li>
-<p><strong>Implement Detection-as-Code:</strong> Integrate <strong>CloudTrail</strong> and <strong>GuardDuty</strong> into the development/testing environment. Begin defining alerting rules as code for anomalous behavior.</p>
-</li>
-<li>
-<p><strong>Advanced Learning:</strong> Research the <strong>AWS Security Specialty Certification</strong> to consolidate knowledge on the 5 security pillars.</p>
-</li>
-</ol>
 <h2 id="event-photos">Event Photos.</h2>
 <p><img src="../../images/4-Events/Event5.1.jpg" alt="c"><br>
 <img src="../../images/4-Events/Event5.2.jpg" alt="c">
@@ -1774,19 +1784,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1764418966"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1764418966"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1764418966"></script>
-    <script src="../../js/jquery.sticky.js?1764418966"></script>
-    <script src="../../js/featherlight.min.js?1764418966"></script>
-    <script src="../../js/highlight.pack.js?1764418966"></script>
+    <script src="../../js/clipboard.min.js?1764819021"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1764819021"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1764819021"></script>
+    <script src="../../js/jquery.sticky.js?1764819021"></script>
+    <script src="../../js/featherlight.min.js?1764819021"></script>
+    <script src="../../js/highlight.pack.js?1764819021"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1764418966"></script>
-    <script src="../../js/learn.js?1764418966"></script>
-    <script src="../../js/hugo-learn.js?1764418966"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1764819021"></script>
+    <script src="../../js/learn.js?1764819021"></script>
+    <script src="../../js/hugo-learn.js?1764819021"></script>
 
-    <link href="../../mermaid/mermaid.css?1764418966" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1764418966"></script>
+    <link href="../../mermaid/mermaid.css?1764819021" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1764819021"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

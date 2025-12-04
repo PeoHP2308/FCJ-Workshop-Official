@@ -13,6 +13,8 @@ pre: " <b> 4.6. </b> "
 
 &emsp;**Topic:** AWS for SAP Using Generative AI & SAP ABAP capabilities and Amazon Q Developer.
 
+&emsp;**Location:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City.
+
 &emsp;**Event Objective:** To explore how Generative Artificial Intelligence (GenAI) can optimize and modernize the SAP environment, focusing on enhancing ABAP development productivity through Amazon Q Developer.
 
 ---

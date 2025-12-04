@@ -8,7 +8,15 @@ pre: " <b> 4.3. </b> "
 
 # BÀI THU HOẠCH SỰ KIỆN: TẬP TRUNG VÀO AWS BEDROCK AGENT VÀ WORKFLOW AGENTIC
 
-**Mục tiêu sự kiện:** Cung cấp kiến thức chuyên sâu về cách xây dựng và vận hành các quy trình làm việc tự động 
+&emsp;**Sự kiện:** Building Agentic AI & Context Optimization with Amazon Bedrock.
+
+&emsp;**Ngày:** Thứ Sáu, 5 tháng 12, 2025.
+
+&emsp;**Thời gian:** 8:30 AM – 12:00 PM (GMT+7).
+
+&emsp;**Địa điểm:** Văn phòng AWS Vietnam, Tòa nhà Bitexco Financial Tower, Quận 1, TP.HCM.
+
+&emsp;**Mục tiêu sự kiện:** Cung cấp kiến thức chuyên sâu về cách xây dựng và vận hành các quy trình làm việc tự động 
 (Agentic Workflows) sử dụng **AWS Bedrock Agent** và giới thiệu giải pháp tối ưu hóa từ đối tác CloudThinker.
 
 

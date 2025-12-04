@@ -13,6 +13,8 @@ pre: " <b> 4.6. </b> "
 
 &emsp;**Chủ đề:** AWS for SAP Using Generative AI & SAP ABAP capabilities and Amazon Q Developer.
 
+&emsp;**Địa điểm:** Văn phòng AWS Vietnam, Tòa nhà Bitexco Financial Tower, Quận 1, TP.HCM.
+
 &emsp;**Mục tiêu sự kiện:** Khám phá cách Trí tuệ Nhân tạo Tạo sinh (GenAI) có thể tối ưu hóa và hiện đại hóa môi trường SAP, tập trung vào việc tăng cường năng suất phát triển ABAP thông qua Amazon Q Developer.
 
 ---
