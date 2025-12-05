@@ -77,8 +77,11 @@ và sử dụng một cách chính xác.
 
 ## Một số hình ảnh khi tham gia sự kiện.
 
-![](/images/4-Events/Event1.1.jpg)
-![](/images/4-Events/Event1.2.jpg)
-![](/images/4-Events/Event1.3.jpg)
-![](/images/4-Events/Event1.4.jpg)
+![](/images/4-Events/Event3.1.jpg)
+![](/images/4-Events/Event3.2.jpg)
+![](/images/4-Events/Event3.3.jpg)
+![](/images/4-Events/Event3.4.jpg)
+![](/images/4-Events/Event3.5.jpg)
+![](/images/4-Events/Event3.6.jpg)
+
 
