@@ -8,6 +8,8 @@ pre: " <b> 2. </b> "
 
 # AWS Cloud Health Dashboard
 ---
+### 📥 [Download Official Project Plan (Docx)](AWS-Cloud-Health-Dashboard.docx)
+---
 
 ## 1. Executive Summary
 

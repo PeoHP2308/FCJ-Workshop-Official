@@ -7,7 +7,8 @@ pre: " <b> 2. </b> "
 ---
 
 # AWS Cloud Health Dashboard
-
+---
+### 📥 [Tải về bản chính thức Project Plan (Docx)](AWS-Cloud-Health-Dashboard.docx)
 ---
 
 ## 1. Tóm tắt điều hành
