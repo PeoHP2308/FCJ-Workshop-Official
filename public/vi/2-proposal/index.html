@@ -15,21 +15,21 @@
     <title>Proposal :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1764983713" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1764983713" rel="stylesheet">
-    <link href="../../css/hybrid.css?1764983713" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1764983713" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1764983713" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1764983713" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1764983713" rel="stylesheet">
-    <link href="../../css/theme.css?1764983713" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1764983713" rel="stylesheet">
+    <link href="../../css/nucleus.css?1765006203" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765006203" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765006203" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765006203" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765006203" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765006203" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765006203" rel="stylesheet">
+    <link href="../../css/theme.css?1765006203" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765006203" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1764983713" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1765006203" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1764983713"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1765006203"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1764983713"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1764983713"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1765006203"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765006203"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/FCJ-Workshop-Official\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1764983713"></script>
+<script type="text/javascript" src="../../js/search.js?1765006203"></script>
  
   </div>
 
@@ -890,16 +890,78 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#giải-pháp-giám-sát-và-tối-ưu-hóa-hạ-tầng-aws-toàn-diện">Giải pháp giám sát và tối ưu hóa hạ tầng AWS toàn diện</a>
+    <li><a href="#1-tóm-tắt-điều-hành">1. Tóm tắt điều hành</a>
       <ul>
-        <li><a href="#1-tóm-tắt-điều-hành">1. Tóm tắt điều hành.</a></li>
-        <li><a href="#2-vấn-đề">2. Vấn đề.</a></li>
-        <li><a href="#3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</a></li>
-        <li><a href="#4-triển-khai-kỹ-thuật">4. Triển khai kỹ thuật</a></li>
-        <li><a href="#5-lộ-trình--mốc-triển-khai">5. Lộ trình &amp; Mốc triển khai.</a></li>
-        <li><a href="#6-ước-tính-ngân-sách">6. Ước tính ngân sách</a></li>
-        <li><a href="#7-đánh-giá-rủi-ro">7. Đánh giá rủi ro.</a></li>
-        <li><a href="#8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng.</a></li>
+        <li><a href="#điểm-nổi-bật-chính">Điểm nổi bật chính:</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-vấn-đề-cần-giải-quyết">2. Vấn đề cần giải quyết</a>
+      <ul>
+        <li><a href="#thách-thức-hiện-tại">Thách thức hiện tại:</a></li>
+        <li><a href="#giải-pháp-của-chúng-tôi">Giải pháp của chúng tôi:</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</a>
+      <ul>
+        <li><a href="#tổng-quan-kiến-trúc">Tổng quan kiến trúc</a></li>
+        <li><a href="#các-thành-phần-chính">Các thành phần chính:</a></li>
+        <li><a href="#luồng-dữ-liệu">Luồng dữ liệu</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-các-tính-năng-chính">4. Các tính năng chính</a>
+      <ul>
+        <li><a href="#hạ-tầng-cấp-production-1">Hạ tầng cấp Production</a></li>
+        <li><a href="#triển-khai-devsecops">Triển khai DevSecOps</a></li>
+        <li><a href="#bảo-mật-hạ-tầng">Bảo mật hạ tầng:</a></li>
+        <li><a href="#quản-lý-đa-khách-hàng">Quản lý đa khách hàng</a></li>
+        <li><a href="#hệ-thống-thông-báo-email">Hệ thống thông báo Email</a></li>
+        <li><a href="#giám-sát-hạ-tầng">Giám sát hạ tầng</a></li>
+        <li><a href="#tối-ưu-chi-phí">Tối ưu chi phí</a></li>
+        <li><a href="#giám-sát-bảo-mật">Giám sát bảo mật</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-triển-khai-kỹ-thuật">5. Triển khai kỹ thuật</a>
+      <ul>
+        <li><a href="#stack-công-nghệ">Stack công nghệ</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-phân-tích-chi-phí">6. Phân tích chi phí</a>
+      <ul>
+        <li><a href="#chi-phí-năm-1-tối-đa-free-tier">Chi phí năm 1 (Tối đa Free Tier)</a></li>
+        <li><a href="#chi-phí-năm-2">Chi phí năm 2+</a></li>
+        <li><a href="#chi-phí-mở-rộng">Chi phí mở rộng</a></li>
+        <li><a href="#tối-ưu-hóa-trong-tương-lai">Tối ưu hóa trong tương lai:</a></li>
+        <li><a href="#tổng-đầu-tư-hạ-tầng">Tổng đầu tư hạ tầng:</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</a></li>
+    <li><a href="#8-kết-quả-mong-đợi">8. Kết quả mong đợi</a>
+      <ul>
+        <li><a href="#sản-phẩm-kỹ-thuật">Sản phẩm kỹ thuật</a></li>
+        <li><a href="#kết-quả-học-tập">Kết quả học tập</a></li>
+        <li><a href="#giá-trị-portfolio">Giá trị Portfolio</a></li>
+        <li><a href="#các-yếu-tố-khác-biệt-chính">Các yếu tố khác biệt chính:</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-kết-luận">9. Kết luận</a>
+      <ul>
+        <li><a href="#hạ-tầng-production">Hạ tầng Production</a></li>
+        <li><a href="#triển-khai-devsecops-2">Triển khai DevSecOps</a></li>
+        <li><a href="#kiến-trúc-doanh-nghiệp-1">Kiến trúc doanh nghiệp</a></li>
+        <li><a href="#thiết-kế-ưu-tiên-bảo-mật">Thiết kế ưu tiên bảo mật</a></li>
+        <li><a href="#chuyên-môn-aws">Chuyên môn AWS</a></li>
+        <li><a href="#nhạy-bén-kinh-doanh">Nhạy bén kinh doanh</a></li>
+        <li><a href="#lý-do-đầu-tư">Lý do đầu tư:</a></li>
+      </ul>
+    </li>
+    <li><a href="#phụ-lục">Phụ lục</a>
+      <ul>
+        <li><a href="#a-các-dịch-vụ-sử-dụng-17-dịch-vụ-aws---cấp-production">A. Các dịch vụ sử dụng (17 dịch vụ AWS - Cấp Production):</a></li>
+        <li><a href="#b-cải-tiến-kiến-trúc-từ-alb--elastic-ip">B. Cải tiến kiến trúc từ ALB + Elastic IP:</a></li>
+        <li><a href="#c-chiến-thắng-tối-ưu-chi-phí">C. Chiến thắng tối ưu chi phí:</a></li>
+        <li><a href="#d-github-repository">D. GitHub Repository</a></li>
+        <li><a href="#e-domain">E. Domain</a></li>
+        <li><a href="#f-thông-tin-liên-hệ">F. Thông tin liên hệ</a></li>
       </ul>
     </li>
   </ul>
@@ -927,1139 +989,1006 @@
 
 
 	<h1 id="aws-cloud-health-dashboard">AWS Cloud Health Dashboard</h1>
-<h2 id="giải-pháp-giám-sát-và-tối-ưu-hóa-hạ-tầng-aws-toàn-diện">Giải pháp giám sát và tối ưu hóa hạ tầng AWS toàn diện</h2>
-<h3 id="1-tóm-tắt-điều-hành">1. Tóm tắt điều hành.</h3>
-<p><strong>AWS Cloud Health Dashboard</strong> là nền tảng giám sát và <strong>tối ưu hóa hạ tầng AWS</strong> được thiết kế nhằm giúp các doanh nghiệp và
-cá nhân quản lý hiệu quả chi phí, bảo mật, và hiệu suất của hệ thống <strong>Cloud</strong>. Nền tảng sử dụng kiến trúc đơn giản với <strong>EC2
-và DynamoDB</strong>, kết hợp các <strong>dịch vụ AWS</strong> như <strong>CloudWatch, Cost Explorer, Security Hub</strong> để cung cấp giám sát thời gian thực và
-phân tích dữ liệu.</p>
-<p><strong>Điểm nổi bật:</strong></p>
+<hr>
+<h2 id="1-tóm-tắt-điều-hành">1. Tóm tắt điều hành</h2>
+<p>AWS Cloud Health Dashboard là một nền tảng SaaS đa khách hàng cấp production với triển khai DevSecOps tự động hóa, cho phép doanh nghiệp giám sát và tối ưu hóa hạ tầng AWS cho nhiều khách hàng từ một hệ thống tập trung duy nhất.</p>
+<h3 id="điểm-nổi-bật-chính">Điểm nổi bật chính:</h3>
 <ul>
-<li>Chi phí vận hành: $12-18/tháng (tận dụng Free Tier).</li>
-<li>Giám sát <strong>CloudWatch metrics và AWS costs</strong>.</li>
-<li>Phân tích chi phí và đề xuất tối ưu hóa dựa trên <strong>AWS APIs</strong>.</li>
-<li><strong>Dashboard real-time</strong> với <strong>data caching</strong>.</li>
-<li>Kiến trúc đơn giản, dễ duy trì và mở rộng quy mô.</li>
+<li><strong>Kiến trúc cấp Production:</strong> Application Load Balancer với SSL/TLS termination, Elastic IP, health checks và khả năng triển khai zero-downtime</li>
+<li><strong>Pipeline DevSecOps:</strong> CI/CD tự động với quét bảo mật và chiến lược triển khai blue-green</li>
+<li><strong>Kiến trúc đa khách hàng:</strong> Được thiết kế để hỗ trợ 10-50+ tài khoản AWS khách hàng (demo được test với 3-5 khách hàng)</li>
+<li><strong>High Availability:</strong> ALB với health checks, khả năng failover tự động và SLA 99.99%</li>
+<li><strong>Chi phí nền tảng:</strong> $39-49/tháng (Năm 1) với hạ tầng cấp production</li>
+<li><strong>Chi phí mỗi khách hàng:</strong> ~$0.59/tháng (có thể mở rộng và dự đoán được)</li>
+<li><strong>Thiết kế bảo mật ưu tiên:</strong> AWS Secrets Manager + mã hóa KMS + chứng chỉ ACM</li>
+<li><strong>Triển khai tự động:</strong> CodePipeline + CodeBuild với triển khai zero-downtime</li>
+<li><strong>5 bảng DynamoDB:</strong> Mô hình dữ liệu tối ưu với cô lập khách hàng</li>
+<li><strong>Redis caching:</strong> Khả năng giảm 60-80% chi phí đọc database</li>
+<li><strong>Hệ thống thông báo email:</strong> Tích hợp AWS SES cho cảnh báo quan trọng</li>
+<li><strong>Elastic IP:</strong> IP tĩnh MIỄN PHÍ cho sự ổn định production</li>
+<li><strong>Stack công nghệ:</strong> FastAPI (Python) + React + DynamoDB + Redis + ALB + Elastic IP + ACM + AWS Secrets Manager + KMS + CloudWatch + CloudTrail + CodePipeline + CodeBuild + EC2 t3.micro</li>
 </ul>
-<h3 id="2-vấn-đề">2. Vấn đề.</h3>
-<p><strong>Vấn đề hiện tại:</strong></p>
-<p>Nhiều doanh nghiệp và cá nhân sử dụng AWS đang gặp phải các thách thức:</p>
-<ol>
-<li>
-<p><strong>Chi phí không kiểm soát</strong>: Thiếu công cụ giám sát chi phí tập trung dẫn đến hoá đơn AWS bất ngờ tăng cao.</p>
-</li>
-<li>
-<p><strong>Bảo mật thiếu visibility</strong>: Không có dashboard tổng hợp cho security findings.</p>
-</li>
-<li>
-<p><strong>Metrics phân tán</strong>: Phải chuyển đổi giữa nhiều console AWS khác nhau.</p>
-</li>
-<li>
-<p><strong>Thiếu historical data</strong>: CloudWatch chỉ giữ metrics 15 ngày (free tier).</p>
-</li>
-<li>
-<p><strong>Không có alerting tùy chỉnh</strong>: Khó setup alerts phức tạp.</p>
-</li>
-</ol>
-<p><strong>Giải pháp:</strong></p>
-<p>Cloud Health Dashboard cung cấp một nền tảng tập trung với các tính năng:</p>
+<hr>
+<h2 id="2-vấn-đề-cần-giải-quyết">2. Vấn đề cần giải quyết</h2>
+<h3 id="thách-thức-hiện-tại">Thách thức hiện tại:</h3>
+<p>Các doanh nghiệp quản lý hạ tầng AWS cho nhiều khách hàng đối mặt với:</p>
 <ul>
-<li>
-<p><strong>Centralized monitoring</strong>: Dashboard duy nhất cho <strong>CloudWatch, Cost Explorer, Security Hub</strong>.</p>
-</li>
-<li>
-<p><strong>Data persistence với DynamoDB</strong>:</p>
-<ul>
-<li>4 bảng chuyên biệt: <strong>CloudHealthMetrics, CloudHealthCosts, SecurityFindings, Recommendations</strong>.</li>
-<li><strong>TTL tự động</strong> để xóa dữ liệu cũ (30 ngày cho metrics, 365 ngày cho costs, 90 ngày cho security, 180 ngày cho recommendations).</li>
-<li><strong>On-demand pricing</strong> để tiết kiệm chi phí.</li>
-<li><strong>Optimized query patterns</strong> với <strong>GSI</strong> cho từng loại data.</li>
+<li><strong>Không có giám sát tập trung:</strong> Phải đăng nhập vào console AWS của từng khách hàng riêng biệt</li>
+<li><strong>Cảnh báo bảo mật rải rác:</strong> Các phát hiện GuardDuty quan trọng bị bỏ qua</li>
+<li><strong>Khoảng trống về chi phí:</strong> Khó theo dõi và tối ưu hóa chi phí trên nhiều khách hàng</li>
+<li><strong>Quản lý thông tin xác thực không an toàn:</strong> AWS access keys được lưu trong database hoặc config files</li>
+<li><strong>Không có triển khai tự động:</strong> Triển khai thủ công dẫn đến lỗi và downtime</li>
+<li><strong>Thiếu quét bảo mật:</strong> Lỗ hổng được triển khai lên production</li>
+<li><strong>Không có audit logging:</strong> Không thể theo dõi sự kiện bảo mật và API calls</li>
+<li><strong>Giám sát thủ công:</strong> 30+ phút mỗi ngày cho mỗi khách hàng</li>
+<li><strong>Downtime trong quá trình triển khai:</strong> Không có chiến lược triển khai zero-downtime</li>
+<li><strong>IP động:</strong> IP thay đổi khi khởi động lại gây ra vấn đề DNS/whitelist</li>
 </ul>
-</li>
-<li>
-<p><strong>Cost analysis</strong>:</p>
+<h3 id="giải-pháp-của-chúng-tôi">Giải pháp của chúng tôi:</h3>
+<p>Cloud Health Dashboard cung cấp nền tảng cấp production với các phương pháp DevSecOps bao gồm:</p>
+<h4 id="hạ-tầng-cấp-production">Hạ tầng cấp Production</h4>
 <ul>
-<li>Historical cost trends.</li>
-<li>Service breakdown.</li>
-<li>AWS Cost Explorer recommendations integration.</li>
-<li>Budget alerts.</li>
+<li>Application Load Balancer cho high availability và phân phối traffic</li>
+<li>Elastic IP cho địa chỉ IP ổn định, bền vững (MIỄN PHÍ khi được gắn)</li>
+<li>SSL/TLS termination với AWS Certificate Manager (ACM)</li>
+<li>Health checks với failover tự động</li>
+<li>Khả năng triển khai zero-downtime</li>
+<li>Sẵn sàng mở rộng theo chiều ngang (hiện tại single EC2, được thiết kế cho multi-instance)</li>
+<li>Đảm bảo SLA 99.99% của ALB</li>
 </ul>
-</li>
-<li>
-<p><strong>Security monitoring</strong>:</p>
+<h4 id="kiến-trúc-devsecops">Kiến trúc DevSecOps</h4>
 <ul>
-<li>Security Hub findings aggregation.</li>
-<li>GuardDuty threat detection display.</li>
-<li>Compliance status tracking.</li>
-<li>Severity-based filtering.</li>
+<li>Pipeline CI/CD tự động (CodePipeline + CodeBuild)</li>
+<li>Quét bảo mật (SAST với Bandit, quét dependency với Safety)</li>
+<li>Chiến lược triển khai blue-green cho zero downtime</li>
+<li>Giám sát hạ tầng với CloudWatch</li>
+<li>Audit logging với CloudTrail</li>
+<li>Quản lý secrets với AWS Secrets Manager + KMS</li>
 </ul>
-</li>
-<li>
-<p><strong>Intelligent recommendations</strong>:</p>
+<h4 id="kiến-trúc-đa-khách-hàng">Kiến trúc đa khách hàng</h4>
 <ul>
-<li>Cost optimization suggestions.</li>
-<li>Performance improvements.</li>
-<li>Security enhancements.</li>
-<li>Impact-based prioritization.</li>
+<li>Kiến trúc có thể mở rộng để giám sát 10-50+ tài khoản AWS khách hàng (MVP demo với 3-5 khách hàng)</li>
+<li>AWS Secrets Manager cho lưu trữ thông tin xác thực (mã hóa KMS)</li>
+<li>Cô lập dữ liệu hoàn toàn giữa các khách hàng</li>
+<li>Hệ thống lập lịch task để thu thập dữ liệu</li>
 </ul>
-</li>
-<li>
-<p><strong>Performance</strong>:</p>
+<h4 id="giám-sát-tập-trung">Giám sát tập trung</h4>
 <ul>
-<li>Redis caching để giảm <strong>AWS API calls</strong>.</li>
-<li>Pre-collected data trong <strong>DynamoDB</strong>.</li>
-<li>WebSocket cho real-time updates.</li>
+<li>Dashboard duy nhất cho tất cả khách hàng</li>
+<li>Sức khỏe hạ tầng theo thời gian thực</li>
+<li>Lưu giữ dữ liệu lịch sử (30-365 ngày)</li>
+<li>15+ dịch vụ AWS được giám sát</li>
+<li>Redis caching để tối ưu hiệu suất</li>
 </ul>
-</li>
-</ul>
-<p><strong>Lợi ích và ROI:</strong></p>
-<ol>
-<li>
-<p><strong>Tiết kiệm chi phí</strong>:</p>
+<hr>
+<h2 id="3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</h2>
+<h3 id="tổng-quan-kiến-trúc">Tổng quan kiến trúc</h3>
+<p><img src="../../images/2-Proposal/final_architecture.drawio.png" alt="final_architecture.drawio.png"></p>
+<h3 id="các-thành-phần-chính">Các thành phần chính:</h3>
 <ul>
-<li>Visibility vào unutilized resources.</li>
-<li>AWS native recommendations (Cost Explorer, Trusted Advisor).</li>
-<li>Chi phí nền tảng chỉ $12-18/tháng.</li>
-<li>Potential savings: 15-25% bằng cách identify waste.</li>
+<li><strong>Internet Gateway:</strong> Điểm vào VPC cho traffic đến</li>
+<li><strong>Application Load Balancer (ALB):</strong>
+<ul>
+<li>Phân phối traffic qua nhiều availability zones</li>
+<li>SSL/TLS termination với chứng chỉ ACM</li>
+<li>Health checks với failover tự động</li>
+<li>Path-based routing (sẵn sàng mở rộng trong tương lai)</li>
+<li>Bảo vệ DDoS (AWS Shield Standard)</li>
 </ul>
 </li>
-<li>
-<p><strong>Tăng visibility</strong>:</p>
+<li><strong>Elastic IP:</strong>
 <ul>
-<li>Single dashboard thay vì 5+ AWS consoles.</li>
-<li>Historical data retention.</li>
-<li>Custom alerts.</li>
-<li>Real-time notifications.</li>
+<li>Địa chỉ IPv4 public tĩnh cho EC2 instance</li>
+<li>MIỄN PHÍ khi được gắn vào EC2 instance đang chạy</li>
+<li>Bền vững qua các lần khởi động lại instance</li>
+<li>Cho phép truy cập SSH ổn định và IP whitelisting</li>
 </ul>
 </li>
-<li>
-<p><strong>Cải thiện productivity</strong>:</p>
-<ul>
-<li>Giảm thời gian monitoring từ 30 phút/ngày xuống 5 phút/ngày.</li>
-<li>Automated data collection.</li>
-<li>Proactive alerts.</li>
-<li>Actionable recommendations.</li>
+<li><strong>EC2 Instance (t3.micro):</strong> Máy chủ ứng dụng xử lý</li>
+<li><strong>Triển khai Zero-Downtime:</strong> Chiến lược blue-green sử dụng target groups</li>
+<li><strong>DynamoDB:</strong> Lưu trữ dữ liệu đa khách hàng</li>
+<li><strong>Redis:</strong> Lớp caching trong bộ nhớ</li>
+<li><strong>AWS Secrets Manager:</strong> Lưu trữ thông tin xác thực an toàn</li>
+<li><strong>CloudWatch &amp; CloudTrail:</strong> Giám sát và audit logging</li>
 </ul>
-</li>
-</ol>
-<h3 id="3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</h3>
-<p><strong>Tổng quan kiến trúc:</strong></p>
-<p>Nền tảng sử dụng kiến trúc Single EC2 Instance + DynamoDB để tối ưu chi phí. EC2 instance chạy tất cả application
-components, trong khi DynamoDB lưu trữ historical data với 4 tables chuyên biệt.</p>
-<p><img src="../../images/2-Proposal/AM.png" alt="Architecture Diagram"></p>
-<p>Dưới đây là sơ đồ hoàn chỉnh:</p>
-<p><img src="../../images/2-Proposal/AR.png" alt="None Diagram"></p>
-<p><strong>Dịch vụ AWS sử dụng:</strong></p>
-<ol>
-<li>
-<p><strong>Amazon EC2</strong> (Compute):</p>
+<h3 id="luồng-dữ-liệu">Luồng dữ liệu</h3>
+<h4 id="1-quy-trình-developer-devsecops-với-triển-khai-zero-downtime">1. QUY TRÌNH DEVELOPER (DevSecOps với Triển khai Zero-Downtime)</h4>
+<pre tabindex="0"><code>Developer → Git push → GitHub → CodePipeline được kích hoạt
+→ CodeBuild chạy:
+  • Cài đặt dependencies
+  • Chạy tests (pytest)
+  • Quét bảo mật (Bandit, Safety)
+  • Build frontend
+  • SSH đến EC2 (qua Elastic IP) → Deploy phiên bản mới
+  • ALB health check xác thực triển khai
+  • Chuyển đổi traffic (zero downtime)
+→ CloudWatch ghi log mọi thứ
+</code></pre><h4 id="2-traffic-đến-luồng-production">2. TRAFFIC ĐẾN (Luồng Production)</h4>
+<pre tabindex="0"><code>Trình duyệt client → HTTPS (Cloudflare CDN/SSL)
+→ Internet Gateway → ALB (chứng chỉ ACM, SSL termination)
+→ Target Group (health check: /health endpoint)
+→ EC2 Instance (Elastic IP được gắn, ứng dụng FastAPI)
+→ Response trả lại qua ALB → Client
+</code></pre><h4 id="3-đăng-ký-khách-hàng">3. ĐĂNG KÝ KHÁCH HÀNG</h4>
+<pre tabindex="0"><code>Khách hàng → Nhập AWS Access key → Click đăng nhập → Tài khoản tự động tạo
+→ API (qua ALB) → Xác thực AWS keys
+→ Lưu trong Secrets Manager (mã hóa KMS)
+→ Lưu metadata trong DynamoDB
+</code></pre><h4 id="4-xác-thực-email">4. XÁC THỰC EMAIL</h4>
+<pre tabindex="0"><code>Khách hàng → Nhập email → Kiểm tra email → Gửi email xác thực 
+→ Click link → ALB → API → Xác thực token
+→ Đánh dấu email đã xác thực → CloudTrail ghi log sự kiện
+</code></pre><h4 id="5-worker-manager-đa-khách-hàng">5. WORKER MANAGER (Đa khách hàng)</h4>
+<pre tabindex="0"><code>Mỗi 15 phút → Lấy khách hàng đang hoạt động từ DynamoDB
+→ Với mỗi khách hàng:
+  • Lấy thông tin xác thực từ Secrets Manager
+  • Lập lịch async task để thu thập dữ liệu
+  • Thu thập dữ liệu AWS
+  • Cache trong Redis (TTL 5 phút)
+  • Lưu trong DynamoDB
+</code></pre><h4 id="6-thu-thập-dữ-liệu-mỗi-khách-hàng">6. THU THẬP DỮ LIỆU (Mỗi khách hàng)</h4>
+<pre tabindex="0"><code>Async Task → Secrets Manager (lấy thông tin xác thực)
+→ Client AWS API → Thu thập metrics
+→ Cache trong Redis → Lưu trong DynamoDB (phân vùng theo aws_account_id)
+→ Nếu phát hiện quan trọng → Gửi email cảnh báo (SES)
+→ CloudWatch ghi log tất cả các hoạt động
+</code></pre><h4 id="7-hiển-thị-dashboard">7. HIỂN THỊ DASHBOARD</h4>
+<pre tabindex="0"><code>Khách hàng đăng nhập → Request qua ALB → FastAPI kiểm tra Redis cache
+→ Cache HIT: Trả về dữ liệu cached (&lt; 200ms)
+→ Cache MISS: Query DynamoDB (lọc theo aws_account_id)
+→ Lưu trong Redis → Trả về dữ liệu qua ALB
+</code></pre><h4 id="8-health-checks--failover">8. HEALTH CHECKS &amp; FAILOVER</h4>
+<pre tabindex="0"><code>ALB → Mỗi 30s → GET /health endpoint
+→ Nếu không khỏe mạnh (2 lần thất bại liên tiếp):
+  • Đánh dấu target không khỏe mạnh
+  • Dừng routing traffic
+  • CloudWatch alarm được kích hoạt
+  • Systemd cố gắng auto-restart
+→ Khi khỏe mạnh: Tiếp tục routing traffic
+</code></pre><h4 id="9-truy-cập-ssh--quản-lý">9. TRUY CẬP SSH &amp; QUẢN LÝ</h4>
+<pre tabindex="0"><code>DevOps Engineer → SSH đến Elastic IP
+→ Truy cập trực tiếp EC2 cho:
+  • Xác thực triển khai
+  • Kiểm tra logs
+  • Khắc phục sự cố khẩn cấp
+  • Bảo trì hệ thống
+→ IP ổn định (không cần cập nhật DNS)
+</code></pre><h4 id="10-bảo-mật--audit">10. BẢO MẬT &amp; AUDIT</h4>
+<pre tabindex="0"><code>Tất cả API calls → CloudTrail logging
+Truy cập thông tin xác thực → CloudWatch alarm
+Các lần thử xác thực thất bại → Email cảnh báo
+Sử dụng KMS key → Audit trail
+ALB access logs → S3 (tùy chọn, cho compliance)
+</code></pre><hr>
+<h2 id="4-các-tính-năng-chính">4. Các tính năng chính</h2>
+<h3 id="hạ-tầng-cấp-production-1">Hạ tầng cấp Production</h3>
+<h4 id="application-load-balancer-alb">Application Load Balancer (ALB):</h4>
 <ul>
-<li>t3.micro instance (750h/month Free Tier).</li>
-<li>Single public subnet (no NAT Gateway needed).</li>
-<li>Components: Nginx, FastAPI, Redis, React, CloudWatch Agent.</li>
-<li>Security: Restrictive security groups, Systems Manager Session Manager.</li>
+<li><strong>High Availability:</strong> Phân phối traffic qua nhiều availability zones</li>
+<li><strong>SSL/TLS Termination:</strong> Chứng chỉ ACM cho mã hóa HTTPS</li>
+<li><strong>Health Checks:</strong> Failover tự động nếu EC2 không khỏe mạnh</li>
+<li><strong>Path-Based Routing:</strong> Routing Frontend và API (sẵn sàng mở rộng trong tương lai)</li>
+<li><strong>Bảo vệ DDoS:</strong> AWS Shield Standard (tự động, không tốn phí)</li>
+<li><strong>SLA 99.99%:</strong> Uptime được AWS đảm bảo</li>
+<li><strong>Triển khai Zero-Downtime:</strong> Chuyển đổi target group cho triển khai blue-green</li>
 </ul>
-</li>
-<li>
-<p><strong>Amazon DynamoDB</strong> (Storage):</p>
+<h4 id="elastic-ip">Elastic IP:</h4>
 <ul>
-<li>4 bảng chuyên biệt: Metrics, Costs, Security, Recommendations.</li>
-<li>On-demand pricing mode.</li>
-<li>TTL enabled cho tự động cleanup.</li>
-<li>Global Secondary Indexes cho query optimization.</li>
-<li>Point-in-time recovery for backups.</li>
+<li><strong>Địa chỉ IP tĩnh:</strong> Public IPv4 bền vững không bao giờ thay đổi</li>
+<li><strong>Chi phí MIỄN PHÍ:</strong> $0/tháng khi được gắn vào EC2 instance đang chạy</li>
+<li><strong>Truy cập SSH ổn định:</strong> Truy cập quản lý đáng tin cậy với IP cố định</li>
+<li><strong>IP Whitelisting:</strong> Cho phép tích hợp bên thứ ba với IP nhất quán</li>
+<li><strong>Không cần cập nhật DNS:</strong> IP tồn tại qua các lần khởi động lại instance</li>
+<li><strong>Disaster Recovery:</strong> Failover nhanh trong khi duy trì cùng một IP</li>
 </ul>
-</li>
-<li>
-<p><strong>Amazon CloudWatch</strong>:</p>
+<h4 id="bảo-mật-ssltls">Bảo mật SSL/TLS:</h4>
 <ul>
-<li>Metrics collection từ EC2, RDS, S3, Lambda, etc.</li>
-<li>Custom metrics cho application monitoring.</li>
-<li>Logs aggregation.</li>
-<li>Alarms và notifications.</li>
+<li>Chứng chỉ được quản lý bởi ACM (tự động gia hạn)</li>
+<li>Hỗ trợ TLS 1.2/1.3</li>
+<li>Mã hóa end-to-end (Cloudflare → ALB → EC2)</li>
+<li>Perfect Forward Secrecy (PFS)</li>
+<li>Chỉ các cipher suites mạnh</li>
 </ul>
-</li>
-<li>
-<p><strong>AWS Cost Explorer</strong>:</p>
+<h4 id="sẵn-sàng-mở-rộng">Sẵn sàng mở rộng:</h4>
 <ul>
-<li>Cost và usage data via API.</li>
-<li>Rightsizing recommendations (AWS native).</li>
-<li>Cost forecast (AWS native).</li>
-<li>Service breakdown.</li>
+<li>Có khả năng mở rộng theo chiều ngang (hiện tại single EC2)</li>
+<li>Kiến trúc target group hỗ trợ nhiều instances</li>
+<li>Sẵn sàng Auto Scaling Group (triển khai trong tương lai)</li>
+<li>Connection draining cho graceful shutdowns</li>
 </ul>
-</li>
-<li>
-<p><strong>AWS Security Hub</strong>:</p>
+<h3 id="triển-khai-devsecops">Triển khai DevSecOps</h3>
+<h4 id="pipeline-cicd-tự-động">Pipeline CI/CD tự động:</h4>
 <ul>
-<li>Security findings aggregation.</li>
-<li>Compliance checking.</li>
-<li>Integration với GuardDuty.</li>
+<li>Tích hợp GitHub cho source control</li>
+<li>CodePipeline cho orchestration (1 pipeline MIỄN PHÍ)</li>
+<li>CodeBuild cho automated builds (100 phút/tháng MIỄN PHÍ)</li>
+<li>Quét bảo mật tự động trước khi triển khai</li>
+<li>Triển khai zero-downtime qua ALB target groups</li>
+<li>Triển khai SSH đến Elastic IP để đảm bảo độ tin cậy</li>
+<li>Xác thực health check trước khi chuyển đổi traffic</li>
 </ul>
-</li>
-<li>
-<p><strong>Amazon GuardDuty</strong> (Optional):</p>
+<h4 id="quét-bảo-mật">Quét bảo mật:</h4>
 <ul>
-<li>Threat detection.</li>
-<li>Anomaly monitoring.</li>
+<li><strong>Bandit:</strong> Static Application Security Testing (SAST)</li>
+<li><strong>Safety:</strong> Quét lỗ hổng dependency</li>
+<li>Cổng bảo mật trước khi triển khai</li>
+<li>Build thất bại với các vấn đề mức độ HIGH</li>
 </ul>
-</li>
-<li>
-<p><strong>Amazon S3</strong> (Backup):</p>
+<h4 id="chiến-lược-triển-khai">Chiến lược triển khai:</h4>
 <ul>
-<li>DynamoDB backup exports.</li>
-<li>CloudWatch logs archive.</li>
+<li>Triển khai blue-green sử dụng ALB target groups</li>
+<li>Xác thực health check (/health endpoint)</li>
+<li>Rollback tự động khi thất bại</li>
+<li>Connection draining trong quá trình triển khai</li>
+<li>Không ảnh hưởng đến khách hàng trong quá trình cập nhật</li>
 </ul>
-</li>
-</ol>
-<p><strong>Single Public Subnet Design:</strong></p>
-<p>EC2 instance được đặt trong public subnet với các biện pháp bảo mật:</p>
-<ol>
-<li>
-<p><strong>Security Group Configuration:</strong></p>
+<h4 id="quản-lý-secrets">Quản lý Secrets:</h4>
 <ul>
-<li>Inbound: Port 80, 443 từ 0.0.0.0/0.</li>
-<li>Inbound: Port 22 chỉ từ trusted IPs (hoặc disable).</li>
-<li>Outbound: Unrestricted (cho AWS API calls).</li>
+<li>AWS Secrets Manager cho lưu trữ thông tin xác thực</li>
+<li>Mã hóa KMS cho tất cả secrets</li>
+<li>Hỗ trợ chính sách rotation (có thể cấu hình trong production)</li>
+<li>Không có thông tin xác thực trong code hoặc biến môi trường</li>
+<li>Chỉ truy cập dựa trên IAM role</li>
 </ul>
-</li>
-<li>
-<p><strong>Access Management:</strong></p>
+<h4 id="giám-sát--logging">Giám sát &amp; Logging:</h4>
 <ul>
-<li>AWS Systems Manager Session Manager thay cho SSH.</li>
-<li>IAM roles với least privilege principle.</li>
-<li>No hardcoded credentials trong code.</li>
+<li>CloudWatch cho logs và metrics ứng dụng</li>
+<li>CloudTrail cho API audit logging</li>
+<li>ALB access logs (tùy chọn, cho compliance)</li>
+<li>Custom metrics cho KPIs kinh doanh</li>
+<li>Cảnh báo tự động cho bất thường</li>
+<li>Lưu giữ logs 90 ngày</li>
 </ul>
-</li>
-<li>
-<p><strong>Monitoring &amp; Logging:</strong></p>
+<h3 id="bảo-mật-hạ-tầng">Bảo mật hạ tầng:</h3>
+<h4 id="lớp-mạng">Lớp mạng:</h4>
 <ul>
-<li>VPC Flow Logs enabled.</li>
-<li>CloudWatch alarms cho security events.</li>
-<li>GuardDuty threat detection.</li>
+<li><strong>Security Groups:</strong> HTTPS (443) từ ALB chỉ đến EC2</li>
+<li><strong>ALB Security Group:</strong> HTTPS (443) từ Internet (0.0.0.0/0)</li>
+<li><strong>Truy cập SSH (22)</strong> đến Elastic IP chỉ từ các IP quản lý</li>
 </ul>
-</li>
-</ol>
-<p><strong>Architecture Decision:</strong></p>
-<p>Private subnet architecture được cân nhắc nhưng không implement vì:</p>
+<h4 id="lớp-ứng-dụng">Lớp ứng dụng:</h4>
 <ul>
-<li>Tăng chi phí 100% ($33/tháng cho NAT Gateway hoặc $14/tháng cho VPC Endpoints).</li>
-<li>Không phù hợp với learning/portfolio project scope.</li>
-<li>Public subnet + security best practices đủ cho use case này.</li>
-<li>Demonstrate cost-aware decision making.</li>
+<li>Xác thực dựa trên JWT với xác thực IP</li>
+<li>Rate limiting (100 req/phút mỗi IP)</li>
+<li>Thực thi chính sách CORS</li>
 </ul>
-<p>Kiến trúc này phù hợp cho development/demo environment. Production deployment trong enterprise sẽ cần private subnet
-với NAT Gateway hoặc VPC Endpoints.</p>
-<p><strong>Components trong EC2 Instance:</strong></p>
-<ol>
-<li>
-<p><strong>Nginx (Port 80/443)</strong></p>
+<h4 id="lớp-hạ-tầng">Lớp hạ tầng:</h4>
 <ul>
-<li>Reverse proxy và web server.</li>
-<li>Serve React static files.</li>
-<li>Proxy API requests tới FastAPI.</li>
-<li>SSL/TLS termination.</li>
-<li>Gzip compression.</li>
+<li>AWS Shield Standard (bảo vệ DDoS)</li>
+<li>SSL/TLS termination tại ALB</li>
+<li>IAM roles với least privilege</li>
+<li>Mã hóa KMS cho data at rest</li>
+<li>Cô lập VPC</li>
 </ul>
-</li>
-<li>
-<p><strong>FastAPI (Port 8000)</strong></p>
+<h3 id="quản-lý-đa-khách-hàng">Quản lý đa khách hàng</h3>
 <ul>
-<li>RESTful API backend.</li>
-<li>AWS SDK integration (boto3).</li>
-<li>Business logic processing.</li>
-<li>Authentication/Authorization.</li>
-<li>Background task scheduling.</li>
+<li>Đăng ký khách hàng tự phục vụ với xác thực AWS key</li>
+<li>Thông tin xác thực được lưu trong Secrets Manager (mã hóa KMS)</li>
+<li>Hệ thống lập lịch task cho thu thập dữ liệu định kỳ</li>
+<li>Cô lập dữ liệu hoàn toàn</li>
+<li>Truy cập dashboard cho từng khách hàng</li>
+<li>Redis caching để tối ưu hiệu suất</li>
 </ul>
-</li>
-<li>
-<p><strong>Redis (Port 6379)</strong></p>
+<h3 id="hệ-thống-thông-báo-email">Hệ thống thông báo Email</h3>
 <ul>
-<li>Cache AWS API responses.</li>
-<li>Cache DynamoDB query results.</li>
-<li>Session storage.</li>
-<li>Rate limiting.</li>
-<li>Typical cache hit rate: 60-80%.</li>
+<li>Xác thực email với tokens bảo mật (hết hạn 24h)</li>
+<li>Cảnh báo quan trọng qua AWS SES</li>
+<li>Tùy chọn thông báo có thể tùy chỉnh</li>
+<li>Templates email HTML</li>
+<li>Quản lý email trong trang Settings</li>
+<li><strong>Lưu ý:</strong> Chế độ sandbox SES yêu cầu xác thực email trước khi gửi</li>
 </ul>
-</li>
-<li>
-<p><strong>React Frontend</strong></p>
+<h3 id="giám-sát-hạ-tầng">Giám sát hạ tầng</h3>
 <ul>
-<li>Single Page Application (SPA).</li>
-<li>Dashboard visualization.</li>
-<li>API client.</li>
-<li>Real-time updates via polling/WebSocket.</li>
-<li>Responsive design.</li>
+<li>Metrics theo thời gian thực từ 15+ dịch vụ AWS</li>
+<li>Lưu giữ dữ liệu lịch sử (30+ ngày)</li>
+<li>Redis caching (tối ưu hiệu suất)</li>
+<li>Giám sát EC2, S3, RDS, Lambda</li>
+<li>Dashboards sức khỏe dịch vụ</li>
+<li>Metrics ALB (số lượng request, latency, healthy targets)</li>
 </ul>
-</li>
-<li>
-<p><strong>CloudWatch Agent</strong></p>
+<h3 id="tối-ưu-chi-phí">Tối ưu chi phí</h3>
 <ul>
-<li>EC2 metrics collection.</li>
-<li>Application logs shipping.</li>
-<li>Custom metrics publishing.</li>
+<li>Theo dõi chi phí hàng ngày cho mỗi dịch vụ</li>
+<li>Xu hướng chi phí hàng tháng</li>
+<li>Khuyến nghị AWS Cost Explorer</li>
+<li>Cảnh báo ngân sách</li>
+<li>Phân tích chi phí cho từng khách hàng</li>
 </ul>
-</li>
-</ol>
-<p><strong>Thiết kế DynamoDB Tables (4 tables):</strong></p>
-<p>Sử dụng 4 tables chuyên biệt để tối ưu performance và separation of concerns:</p>
-<p><strong>Table 1: CloudHealthMetrics</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TableName&#34;</span>: <span style="color:#e6db74">&#34;CloudHealthMetrics&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;KeySchema&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;HASH&#34;</span>},   <span style="color:#75715e"># service#metric_name</span>
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;RANGE&#34;</span>}   <span style="color:#75715e"># ISO timestamp</span>
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;AttributeDefinitions&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>}
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;GlobalSecondaryIndexes&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;IndexName&#34;</span>: <span style="color:#e6db74">&#34;MetricNameIndex&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;KeySchema&#34;</span>: [
-</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;HASH&#34;</span>},  <span style="color:#75715e"># metric_name</span>
-</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;RANGE&#34;</span>}        <span style="color:#75715e"># timestamp</span>
-</span></span><span style="display:flex;"><span>            ],
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Projection&#34;</span>: {<span style="color:#e6db74">&#34;ProjectionType&#34;</span>: <span style="color:#e6db74">&#34;ALL&#34;</span>}
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TimeToLiveSpecification&#34;</span>: {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;ttl&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Enabled&#34;</span>: true  <span style="color:#75715e"># Auto-delete after 30 days</span>
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;BillingMode&#34;</span>: <span style="color:#e6db74">&#34;PAY_PER_REQUEST&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example item:</span>
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;pk&#34;</span>: <span style="color:#e6db74">&#34;EC2#CPUUtilization&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;sk&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22T14:30:00Z&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>: <span style="color:#e6db74">&#34;CPUUtilization&#34;</span>,  <span style="color:#75715e"># For cross-service queries</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;value&#34;</span>: <span style="color:#ae81ff">75.5</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;unit&#34;</span>: <span style="color:#e6db74">&#34;Percent&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;EC2&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;metric_name&#34;</span>: <span style="color:#e6db74">&#34;CPUUtilization&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;dimensions&#34;</span>: {<span style="color:#e6db74">&#34;InstanceId&#34;</span>: <span style="color:#e6db74">&#34;i-1234567890abcdef0&#34;</span>},
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;ttl&#34;</span>: <span style="color:#ae81ff">1669824000</span>  <span style="color:#75715e"># Unix timestamp</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><strong>Table 2: CloudHealthCosts</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TableName&#34;</span>: <span style="color:#e6db74">&#34;CloudHealthCosts&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;KeySchema&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;HASH&#34;</span>},   <span style="color:#75715e"># service</span>
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;RANGE&#34;</span>}   <span style="color:#75715e"># date#granularity</span>
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;AttributeDefinitions&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>}
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TimeToLiveSpecification&#34;</span>: {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;ttl&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Enabled&#34;</span>: true  <span style="color:#75715e"># Auto-delete after 365 days</span>
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;BillingMode&#34;</span>: <span style="color:#e6db74">&#34;PAY_PER_REQUEST&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example item:</span>
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;pk&#34;</span>: <span style="color:#e6db74">&#34;EC2&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;sk&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22#DAILY&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;granularity&#34;</span>: <span style="color:#e6db74">&#34;DAILY&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;cost&#34;</span>: <span style="color:#ae81ff">12.45</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;usage_quantity&#34;</span>: <span style="color:#ae81ff">24.0</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;usage_unit&#34;</span>: <span style="color:#e6db74">&#34;Hrs&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;currency&#34;</span>: <span style="color:#e6db74">&#34;USD&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tags&#34;</span>: {<span style="color:#e6db74">&#34;Environment&#34;</span>: <span style="color:#e6db74">&#34;Production&#34;</span>},
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;ttl&#34;</span>: <span style="color:#ae81ff">1704067200</span>  <span style="color:#75715e"># Unix timestamp (1 year)</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><strong>Table 3: SecurityFindings</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TableName&#34;</span>: <span style="color:#e6db74">&#34;SecurityFindings&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;KeySchema&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;HASH&#34;</span>},   <span style="color:#75715e"># finding_type</span>
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;RANGE&#34;</span>}   <span style="color:#75715e"># finding_id</span>
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;AttributeDefinitions&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_sk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>}
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;GlobalSecondaryIndexes&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;IndexName&#34;</span>: <span style="color:#e6db74">&#34;SeverityIndex&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;KeySchema&#34;</span>: [
-</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;HASH&#34;</span>},  <span style="color:#75715e"># severity</span>
-</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_sk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;RANGE&#34;</span>}  <span style="color:#75715e"># created_at</span>
-</span></span><span style="display:flex;"><span>            ],
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Projection&#34;</span>: {<span style="color:#e6db74">&#34;ProjectionType&#34;</span>: <span style="color:#e6db74">&#34;ALL&#34;</span>}
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TimeToLiveSpecification&#34;</span>: {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;ttl&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Enabled&#34;</span>: true  <span style="color:#75715e"># Auto-delete after 90 days</span>
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;BillingMode&#34;</span>: <span style="color:#e6db74">&#34;PAY_PER_REQUEST&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example item:</span>
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;pk&#34;</span>: <span style="color:#e6db74">&#34;GuardDuty&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;sk&#34;</span>: <span style="color:#e6db74">&#34;finding-abc123def456&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>: <span style="color:#e6db74">&#34;HIGH&#34;</span>,  <span style="color:#75715e"># For severity-based queries</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;gsi1_sk&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22T14:30:00Z&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;finding_id&#34;</span>: <span style="color:#e6db74">&#34;finding-abc123def456&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;finding_type&#34;</span>: <span style="color:#e6db74">&#34;GuardDuty&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;severity&#34;</span>: <span style="color:#e6db74">&#34;HIGH&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;status&#34;</span>: <span style="color:#e6db74">&#34;ACTIVE&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Suspicious network traffic detected&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Unusual outbound traffic from EC2 instance to known malicious IP&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;EC2&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;resource_id&#34;</span>: <span style="color:#e6db74">&#34;i-1234567890abcdef0&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;resource_type&#34;</span>: <span style="color:#e6db74">&#34;Instance&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;recommendation&#34;</span>: <span style="color:#e6db74">&#34;Review security group rules and investigate instance activity&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22T14:30:00Z&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22T14:30:00Z&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;ttl&#34;</span>: <span style="color:#ae81ff">1677484800</span>  <span style="color:#75715e"># Unix timestamp (90 days)</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><strong>Table 4: Recommendations</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TableName&#34;</span>: <span style="color:#e6db74">&#34;Recommendations&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;KeySchema&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;HASH&#34;</span>},   <span style="color:#75715e"># type</span>
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;RANGE&#34;</span>}   <span style="color:#75715e"># created_at#rec_id</span>
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;AttributeDefinitions&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;pk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;sk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_sk&#34;</span>, <span style="color:#e6db74">&#34;AttributeType&#34;</span>: <span style="color:#e6db74">&#34;N&#34;</span>}
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;GlobalSecondaryIndexes&#34;</span>: [
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;IndexName&#34;</span>: <span style="color:#e6db74">&#34;ImpactIndex&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;KeySchema&#34;</span>: [
-</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;HASH&#34;</span>},  <span style="color:#75715e"># impact#service</span>
-</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;gsi1_sk&#34;</span>, <span style="color:#e6db74">&#34;KeyType&#34;</span>: <span style="color:#e6db74">&#34;RANGE&#34;</span>}  <span style="color:#75715e"># estimated_savings</span>
-</span></span><span style="display:flex;"><span>            ],
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Projection&#34;</span>: {<span style="color:#e6db74">&#34;ProjectionType&#34;</span>: <span style="color:#e6db74">&#34;ALL&#34;</span>}
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;TimeToLiveSpecification&#34;</span>: {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;AttributeName&#34;</span>: <span style="color:#e6db74">&#34;ttl&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Enabled&#34;</span>: true  <span style="color:#75715e"># Auto-delete after 180 days</span>
-</span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;BillingMode&#34;</span>: <span style="color:#e6db74">&#34;PAY_PER_REQUEST&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example item:</span>
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;pk&#34;</span>: <span style="color:#e6db74">&#34;cost&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;sk&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22T14:30:00Z#rec-789xyz&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;gsi1_pk&#34;</span>: <span style="color:#e6db74">&#34;HIGH#EC2&#34;</span>,  <span style="color:#75715e"># For impact-based queries</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;gsi1_sk&#34;</span>: <span style="color:#ae81ff">50.00</span>,  <span style="color:#75715e"># estimated_savings for sorting</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;rec_id&#34;</span>: <span style="color:#e6db74">&#34;rec-789xyz&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;cost&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Rightsize EC2 instance i-1234567890abcdef0&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Instance runs at &lt;10% CPU utilization. Consider downsizing from t3.large to t3.small&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;impact&#34;</span>: <span style="color:#e6db74">&#34;HIGH&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;effort&#34;</span>: <span style="color:#e6db74">&#34;LOW&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;confidence&#34;</span>: <span style="color:#ae81ff">0.92</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;estimated_savings&#34;</span>: <span style="color:#ae81ff">50.00</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;estimated_savings_period&#34;</span>: <span style="color:#e6db74">&#34;monthly&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;service&#34;</span>: <span style="color:#e6db74">&#34;EC2&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;resource_id&#34;</span>: <span style="color:#e6db74">&#34;i-1234567890abcdef0&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;resource_type&#34;</span>: <span style="color:#e6db74">&#34;Instance&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;current_config&#34;</span>: <span style="color:#e6db74">&#34;t3.large&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;recommended_config&#34;</span>: <span style="color:#e6db74">&#34;t3.small&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;action_steps&#34;</span>: [
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;1. Create AMI backup&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;2. Stop instance&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;3. Change instance type&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;4. Restart and monitor&#34;</span>
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;implemented&#34;</span>: false,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22T14:30:00Z&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2025-09-22T14:30:00Z&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;ttl&#34;</span>: <span style="color:#ae81ff">1685894400</span>  <span style="color:#75715e"># Unix timestamp (180 days)</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><strong>Design Rationale:</strong></p>
-<p>Tách thành 4 tables chuyên biệt thay vì 2 tables tổng hợp vì:</p>
-<ol>
-<li>
-<p><strong>Query Performance</strong>: Mỗi table optimize cho access pattern riêng.</p>
+<h3 id="giám-sát-bảo-mật">Giám sát bảo mật</h3>
 <ul>
-<li>Metrics: Time-series queries với high write throughput.</li>
-<li>Costs: Aggregation queries theo service và date range.</li>
-<li>Security: Severity-based filtering và real-time monitoring.</li>
-<li>Recommendations: Impact-based sorting và status tracking.</li>
+<li>Hỗ trợ tích hợp GuardDuty (demo sử dụng các phát hiện mô phỏng)</li>
+<li>Lọc dựa trên mức độ nghiêm trọng</li>
+<li>Cảnh báo email cho các phát hiện quan trọng</li>
+<li>CloudTrail audit logging</li>
+<li>Theo dõi trạng thái tuân thủ</li>
 </ul>
-</li>
-<li>
-<p><strong>Separation of Concerns</strong>:</p>
+<hr>
+<h2 id="5-triển-khai-kỹ-thuật">5. Triển khai kỹ thuật</h2>
+<h3 id="stack-công-nghệ">Stack công nghệ</h3>
+<h4 id="frontend">Frontend:</h4>
 <ul>
-<li>Rõ ràng về data ownership và lifecycle.</li>
-<li>TTL policies khác nhau cho từng loại data.</li>
-<li>Dễ maintain và troubleshoot.</li>
+<li>React 18 với Vite</li>
+<li>TanStack Query cho data fetching</li>
+<li>Recharts cho visualization</li>
+<li>Tailwind CSS cho styling</li>
 </ul>
-</li>
-<li>
-<p><strong>Scalability</strong>:</p>
+<h4 id="backend">Backend:</h4>
 <ul>
-<li>Độc lập scale từng table khi cần.</li>
-<li>Không bị hot partition khi một loại data tăng đột biến.</li>
-<li>GSI optimize cho query patterns cụ thể.</li>
+<li>Python 3.12+ với FastAPI</li>
+<li>boto3 (AWS SDK)</li>
+<li>asyncio cho concurrent task execution</li>
+<li>Redis cho caching</li>
+<li>pytest cho testing</li>
+<li>uvicorn ASGI server</li>
 </ul>
-</li>
-<li>
-<p><strong>Cost Management</strong>:</p>
+<h4 id="hạ-tầng">Hạ tầng:</h4>
 <ul>
-<li>Monitor và optimize cost theo từng table.</li>
-<li>Flexible TTL cho từng use case.</li>
-<li>On-demand billing phù hợp với variable workload.</li>
+<li><strong>Load Balancer:</strong> Application Load Balancer (ALB)</li>
+<li><strong>Networking:</strong> Elastic IP (static public IPv4)</li>
+<li><strong>Compute:</strong> EC2 t3.micro (1 vCPU, 1GB RAM, Ubuntu 22.04 LTS)</li>
+<li><strong>Database:</strong> DynamoDB (5 bảng, on-demand pricing)</li>
+<li><strong>Cache:</strong> Redis (in-memory, localhost)</li>
+<li><strong>Networking:</strong> VPC với public subnet, Internet Gateway</li>
 </ul>
-</li>
-</ol>
-<p><strong>Trade-offs:</strong></p>
+<h4 id="devsecops">DevSecOps:</h4>
 <ul>
-<li>Chi phí cao hơn ~$2-3/tháng so với 2 tables.</li>
-<li>Complexity cao hơn khi deploy và maintain.</li>
-<li>Nhưng: Better performance, cleaner architecture, easier to scale.</li>
+<li>GitHub (source control)</li>
+<li>CodePipeline (CI/CD orchestration)</li>
+<li>CodeBuild (automated builds)</li>
+<li>Bandit (SAST security scanner)</li>
+<li>Safety (dependency scanner)</li>
 </ul>
-<h3 id="4-triển-khai-kỹ-thuật">4. Triển khai kỹ thuật</h3>
-<p><strong>Stack công nghệ:</strong></p>
-<p><strong>Backend:</strong></p>
+<h4 id="bảo-mật">Bảo mật:</h4>
 <ul>
-<li>Python 3.9+ với FastAPI framework.</li>
-<li>boto3 cho AWS SDK.</li>
-<li>Redis cho caching.</li>
-<li>uvicorn ASGI server.</li>
-<li>asyncio cho async operations.</li>
+<li>AWS Certificate Manager (ACM) - Chứng chỉ SSL/TLS</li>
+<li>AWS Secrets Manager (lưu trữ thông tin xác thực)</li>
+<li>AWS KMS (encryption keys)</li>
+<li>CloudTrail (audit logging)</li>
+<li>CloudWatch (giám sát &amp; cảnh báo)</li>
+<li>Security Groups (network firewall)</li>
 </ul>
-<p><strong>Frontend:</strong></p>
+<h4 id="email">Email:</h4>
 <ul>
-<li>React 18 với Vite.</li>
-<li>TanStack Query (React Query) cho data fetching.</li>
-<li>Recharts cho data visualization.</li>
-<li>Tailwind CSS cho styling.</li>
-<li>Axios cho HTTP client.</li>
+<li>AWS SES (Simple Email Service)</li>
+<li>Templates email HTML</li>
+<li>Xác thực email với tokens</li>
+<li>Thông báo cảnh báo</li>
 </ul>
-<p><strong>Database:</strong></p>
-<ul>
-<li>DynamoDB làm primary database (4 tables).</li>
-<li>Redis cho caching (in-memory).</li>
-</ul>
-<p><strong>DevOps:</strong></p>
-<ul>
-<li>Nginx làm reverse proxy.</li>
-<li>Systemd cho service management.</li>
-<li>CloudWatch Agent cho monitoring.</li>
-<li>Bash scripts cho automation.</li>
-</ul>
-<p><strong>Core Features Implementation:</strong></p>
-<ol>
-<li>
-<p><strong>Metrics Collection Service</strong></p>
-<ul>
-<li>Background job chạy mỗi 5 phút.</li>
-<li>Collect metrics từ CloudWatch API.</li>
-<li>Store vào CloudHealthMetrics table.</li>
-<li>Cache trong Redis (5 minute TTL).</li>
-</ul>
-</li>
-<li>
-<p><strong>Cost Analysis Service</strong></p>
-<ul>
-<li>Daily job collect cost data từ Cost Explorer API.</li>
-<li>Store historical data trong CloudHealthCosts table.</li>
-<li>Generate charts và trends.</li>
-<li>Display AWS native recommendations.</li>
-</ul>
-</li>
-<li>
-<p><strong>Security Monitoring</strong></p>
-<ul>
-<li>Poll Security Hub và GuardDuty findings.</li>
-<li>Store trong SecurityFindings table.</li>
-<li>Display active findings với severity filtering.</li>
-<li>Alert on high/critical severity.</li>
-<li>Read-only integration.</li>
-</ul>
-</li>
-<li>
-<p><strong>Recommendations Engine</strong></p>
-<ul>
-<li>Analyze metrics, costs, và security data.</li>
-<li>Generate actionable recommendations.</li>
-<li>Store trong Recommendations table.</li>
-<li>Prioritize by impact và confidence.</li>
-<li>Track implementation status.</li>
-</ul>
-</li>
-<li>
-<p><strong>API Endpoints</strong></p>
-<ul>
-<li><code>GET /api/v1/metrics</code> - Retrieve metrics from DynamoDB.</li>
-<li><code>GET /api/v1/costs</code> - Cost data và trends.</li>
-<li><code>GET /api/v1/security</code> - Security findings.</li>
-<li><code>GET /api/v1/recommendations</code> - Optimization recommendations.</li>
-<li><code>GET /api/v1/health</code> - Health check.</li>
-<li><code>WS /ws</code> - WebSocket cho real-time updates (optional).</li>
-</ul>
-</li>
-<li>
-<p><strong>Caching Strategy</strong></p>
-<ul>
-<li>Redis cache cho frequent queries.</li>
-<li>5-minute TTL cho metrics data.</li>
-<li>1-hour TTL cho cost data.</li>
-<li>30-minute TTL cho security findings.</li>
-<li>2-hour TTL cho recommendations.</li>
-<li>Cache invalidation on data refresh.</li>
-</ul>
-</li>
-<li>
-<p><strong>Security Measures</strong></p>
-<ul>
-<li>HTTPS only với Let&rsquo;s Encrypt.</li>
-<li>IAM roles với least privilege.</li>
-<li>Security groups restrictive rules.</li>
-<li>No hardcoded credentials.</li>
-<li>VPC Flow Logs enabled.</li>
-</ul>
-</li>
-</ol>
-<h3 id="5-lộ-trình--mốc-triển-khai">5. Lộ trình &amp; Mốc triển khai.</h3>
-<p><strong>MVP Features (3 tháng, 4 người):</strong></p>
-<pre tabindex="0"><code>THÁNG 1: Core Infrastructure &amp; Basic Features
-├─ Tuần 1: Infrastructure Setup (1 người DevOps + 3 người support).
-│  ├─ EC2 instance launch và configuration.
-│  ├─ DynamoDB tables creation (4 tables với GSIs).
-│  ├─ Security groups, IAM roles.
-│  ├─ Development environment setup.
-│  └─ Deliverable: Working infrastructure với 4 DynamoDB tables.
-│
-├─ Tuần 2: Backend Foundation (2 người Backend + 2 người Frontend start).
-│  ├─ FastAPI skeleton với basic endpoints.
-│  ├─ DynamoDB connection và basic CRUD cho 4 tables
-│  ├─ CloudWatch integration (read metrics).
-│  ├─ React app initialization.
-│  └─ Deliverable: API responding, Frontend routing.
-│
-├─ Tuần 3: Core Monitoring (2 Backend + 2 Frontend).
-│  ├─ Metrics collection background job.
-│  ├─ Store metrics in CloudHealthMetrics table.
-│  ├─ Basic dashboard page với charts.
-│  ├─ Display real CloudWatch data.
-│  └─ Deliverable: Metrics monitoring working.
-│
-└─ Tuần 4: Cost Integration (2 Backend + 2 Frontend)
-   ├─ Cost Explorer API integration
-   ├─ Cost data storage in CloudHealthCosts table
-   ├─ Cost dashboard page
-   ├─ Charts và trends visualization
-   └─ Deliverable: Month 1 MVP - Metrics + Costs monitoring
-
-THÁNG 2: Additional Features &amp; Polish.
-├─ Tuần 5: Redis Caching (1 Backend + 1 DevOps + 2 Frontend).
-│  ├─ Redis setup và integration.
-│  ├─ Cache layer implementation cho 4 tables.
-│  ├─ Performance optimization.
-│  ├─ Frontend improvements.
-│  └─ Deliverable: Improved performance.
-│
-├─ Tuần 6: Security Monitoring (2 Backend + 2 Frontend).
-│  ├─ Security Hub và GuardDuty integration.
-│  ├─ Store findings in SecurityFindings table.
-│  ├─ Security dashboard page với severity filtering.
-│  ├─ Alert system basic.
-│  └─ Deliverable: Security visibility.
-│
-├─ Tuần 7: Recommendations Engine (2 Backend + 2 Frontend).
-│  ├─ AWS Cost Explorer recommendations integration.
-│  ├─ Rule-based cost optimization logic.
-│  ├─ Store in Recommendations table.
-│  ├─ Recommendations UI với impact sorting.
-│  ├─ Testing và bug fixes.
-│  └─ Deliverable: Optimization suggestions.
-│
-└─ Tuần 8: Integration &amp; Testing (All 4).
-   ├─ End-to-end testing across 4 tables.
-   ├─ Bug fixes.
-   ├─ Performance tuning.
-   ├─ Documentation
-   └─ Deliverable: Stable application.
-
-THÁNG 3: Production Ready &amp; Deployment.
-├─ Tuần 9: Deployment Automation (1 DevOps + 3 support).
-│  ├─ SSL certificates setup.
-│  ├─ Nginx configuration.
-│  ├─ Systemd services.
-│  ├─ Monitoring setup.
-│  └─ Deliverable: Production deployment.
-│
-├─ Tuần 10: Documentation &amp; Polish (All 4).
-│  ├─ User documentation.
-│  ├─ API documentation.
-│  ├─ DynamoDB schema documentation.
-│  ├─ Deployment guide.
-│  ├─ UI/UX improvements.
-│  └─ Deliverable: Production-ready system.
-│
-├─ Tuần 11: Testing &amp; Bug Fixes (All 4).
-│  ├─ Load testing.
-│  ├─ Security testing.
-│  ├─ DynamoDB performance testing.
-│  ├─ Bug fixing.
-│  ├─ Performance optimization.
-│  └─ Deliverable: Stable production.
-│
-└─ Tuần 12: Demo Preparation (All 4).
-   ├─ Demo environment setup.
-   ├─ Presentation materials.
-   ├─ Final testing.
-   ├─ Knowledge transfer.
-   └─ Deliverable: Project handover.
-
-Post-deployment: Maintenance &amp; Enhancements.
-└─ Monitoring, bug fixes, feature requests.
-</code></pre><p><strong>Phase 2 (Future Enhancements - 3-6 tháng sau):</strong></p>
-<ul>
-<li>Machine Learning cost prediction models.</li>
-<li>Multi-account support.</li>
-<li>Advanced analytics.</li>
-<li>Well-Architected Framework assessment.</li>
-<li>GuardDuty deep integration.</li>
-<li>AWS Config compliance tracking.</li>
-<li>Custom alerting workflows.</li>
-<li>Mobile responsive improvements.</li>
-<li>Advanced recommendation algorithms.</li>
-</ul>
-<h3 id="6-ước-tính-ngân-sách">6. Ước tính ngân sách</h3>
-<p><strong>Chi phí hạ tầng AWS (Monthly):</strong></p>
+<hr>
+<h2 id="6-phân-tích-chi-phí">6. Phân tích chi phí</h2>
+<p><strong>Lưu ý chi phí:</strong> Ước tính dựa trên giá AWS us-east-1 (tháng 12 năm 2025) sử dụng AWS Pricing Calculator. Giả định: 10 khách hàng, khoảng thu thập 15 phút, lưu giữ dữ liệu 30 ngày.</p>
+<h3 id="chi-phí-năm-1-tối-đa-free-tier">Chi phí năm 1 (Tối đa Free Tier)</h3>
 <table>
   <thead>
       <tr>
-          <th>Dịch vụ</th>
-          <th>Mô tả</th>
-          <th>Tháng 1</th>
-          <th>Tháng 2</th>
-          <th>Tháng 3</th>
+          <th>Dịch vụ AWS</th>
+          <th>Chi phí/Tháng</th>
+          <th>Ghi chú</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><strong>EC2 t3.micro</strong></td>
-          <td>750h Free Tier</td>
-          <td>$0</td>
-          <td>$0</td>
-          <td>$0</td>
+          <td>Application Load Balancer</td>
+          <td>$16.20</td>
+          <td>$0.0225/giờ + phí LCU</td>
       </tr>
       <tr>
-          <td><strong>DynamoDB</strong></td>
-          <td>On-demand, 4 tables</td>
-          <td>$3-4</td>
-          <td>$4-6</td>
-          <td>$6-8</td>
+          <td>Elastic IP</td>
+          <td>$0</td>
+          <td>MIỄN PHÍ khi gắn vào EC2 đang chạy</td>
       </tr>
       <tr>
-          <td><strong>CloudWatch</strong></td>
-          <td>Metrics + Logs (Free Tier)</td>
+          <td>EC2 t3.micro (750h miễn phí)</td>
+          <td>$0 (12 tháng)</td>
+          <td>Free tier năm đầu</td>
+      </tr>
+      <tr>
+          <td>DynamoDB (25GB miễn phí)</td>
+          <td>$0-3</td>
+          <td>Free tier + vượt mức</td>
+      </tr>
+      <tr>
+          <td>S3 (5GB miễn phí)</td>
           <td>$0-1</td>
-          <td>$1-2</td>
-          <td>$2-3</td>
+          <td>Backups + ALB logs (tùy chọn)</td>
       </tr>
       <tr>
-          <td><strong>Data Transfer</strong></td>
-          <td>15GB Free Tier</td>
+          <td>CloudWatch (10 metrics miễn phí)</td>
+          <td>$0-2</td>
+          <td>Metrics bổ sung</td>
+      </tr>
+      <tr>
+          <td>Secrets Manager (1 secret)</td>
+          <td>$0.40</td>
+          <td>Per secret/tháng</td>
+      </tr>
+      <tr>
+          <td>ACM Certificate</td>
           <td>$0</td>
+          <td>MIỄN PHÍ cho ALB/CloudFront</td>
+      </tr>
+      <tr>
+          <td>CodePipeline (1 pipeline miễn phí)</td>
+          <td>$0</td>
+          <td>Pipeline đầu tiên miễn phí</td>
+      </tr>
+      <tr>
+          <td>CodeBuild (100 phút/tháng miễn phí)</td>
+          <td>$0</td>
+          <td>Trong free tier</td>
+      </tr>
+      <tr>
+          <td>CloudTrail (1 trail miễn phí)</td>
+          <td>$0</td>
+          <td>Management events miễn phí</td>
+      </tr>
+      <tr>
+          <td>KMS (20,000 requests miễn phí)</td>
           <td>$0-1</td>
-          <td>$1</td>
+          <td>Chủ yếu trong free tier</td>
       </tr>
       <tr>
-          <td><strong>S3</strong></td>
-          <td>Backup storage (~5GB)</td>
+          <td>SES (3,000 emails miễn phí)</td>
           <td>$0</td>
+          <td>Xác thực + cảnh báo</td>
+      </tr>
+      <tr>
+          <td>Data Transfer (1GB miễn phí)</td>
           <td>$0-1</td>
-          <td>$1</td>
+          <td>ALB đến EC2 (không tính phí cùng AZ)</td>
       </tr>
       <tr>
-          <td><strong>Security Services</strong></td>
-          <td>GuardDuty (optional)</td>
-          <td>$0</td>
-          <td>$1</td>
-          <td>$1-2</td>
-      </tr>
-      <tr>
-          <td><strong>TỔNG</strong></td>
-          <td></td>
-          <td><strong>$3-5</strong></td>
-          <td><strong>$6-11</strong></td>
-          <td><strong>$11-18</strong></td>
+          <td><strong>TỔNG Năm 1</strong></td>
+          <td><strong>$39-49/tháng</strong></td>
+          <td>Hạ tầng cấp production</td>
       </tr>
   </tbody>
 </table>
-<p><strong>Chi phí trung bình 12 tháng: $12-18/tháng</strong>.</p>
-<p><strong>DynamoDB Cost Breakdown (4 tables):</strong></p>
+<h3 id="chi-phí-năm-2">Chi phí năm 2+</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Dịch vụ AWS</th>
+          <th>Chi phí/Tháng</th>
+          <th>Ghi chú</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Application Load Balancer</td>
+          <td>$16.20</td>
+          <td>$0.0225/giờ + phí LCU</td>
+      </tr>
+      <tr>
+          <td>Elastic IP</td>
+          <td>$0</td>
+          <td>MIỄN PHÍ khi gắn vào EC2 đang chạy</td>
+      </tr>
+      <tr>
+          <td>EC2 t3.micro</td>
+          <td>$8-10</td>
+          <td>Giá on-demand</td>
+      </tr>
+      <tr>
+          <td>DynamoDB</td>
+          <td>$3-5</td>
+          <td>Storage + operations</td>
+      </tr>
+      <tr>
+          <td>CloudWatch</td>
+          <td>$2-4</td>
+          <td>Logs + metrics</td>
+      </tr>
+      <tr>
+          <td>Secrets Manager</td>
+          <td>$0.40</td>
+          <td>Per secret/tháng</td>
+      </tr>
+      <tr>
+          <td>ACM Certificate</td>
+          <td>$0</td>
+          <td>MIỄN PHÍ cho ALB</td>
+      </tr>
+      <tr>
+          <td>CodePipeline</td>
+          <td>$0</td>
+          <td>Pipeline đầu tiên miễn phí</td>
+      </tr>
+      <tr>
+          <td>CodeBuild</td>
+          <td>$0</td>
+          <td>Trong giới hạn free tier</td>
+      </tr>
+      <tr>
+          <td>CloudTrail</td>
+          <td>$0</td>
+          <td>Management events miễn phí</td>
+      </tr>
+      <tr>
+          <td>KMS</td>
+          <td>$1-2</td>
+          <td>Lưu trữ key + requests</td>
+      </tr>
+      <tr>
+          <td>SES</td>
+          <td>$2-5</td>
+          <td>Gửi email</td>
+      </tr>
+      <tr>
+          <td>S3</td>
+          <td>$1</td>
+          <td>Backups + logs</td>
+      </tr>
+      <tr>
+          <td>Data Transfer</td>
+          <td>$1</td>
+          <td>Outbound traffic</td>
+      </tr>
+      <tr>
+          <td><strong>TỔNG Năm 2+</strong></td>
+          <td><strong>$47-57/tháng</strong></td>
+          <td>Production với ALB</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="chi-phí-mở-rộng">Chi phí mở rộng</h3>
+<h4 id="năm-1-ec2-free-tier">Năm 1 (EC2 Free Tier):</h4>
 <ul>
-<li>
-<p><strong>Lưu trữ</strong>: ~5GB total = $1.25/tháng.</p>
+<li><strong>10 khách hàng:</strong> Nền tảng $39 + (10 × $0.59) = $44.90/tháng</li>
+<li><strong>20 khách hàng:</strong> Nền tảng $39 + (20 × $0.59) = $50.80/tháng</li>
+<li><strong>50 khách hàng:</strong> Nền tảng $39 + (50 × $0.59) = $68.50/tháng</li>
+</ul>
+<h4 id="năm-2-ec2-trả-phí">Năm 2+ (EC2 trả phí):</h4>
 <ul>
-<li>CloudHealthMetrics: 2GB ($0.50).</li>
-<li>CloudHealthCosts: 1GB ($0.25).</li>
-<li>SecurityFindings: 1GB ($0.25).</li>
-<li>Recommendations: 1GB ($0.25).</li>
+<li><strong>10 khách hàng:</strong> Nền tảng $47 + (10 × $0.59) = $52.90/tháng</li>
+<li><strong>20 khách hàng:</strong> Nền tảng $47 + (20 × $0.59) = $58.80/tháng</li>
+<li><strong>50 khách hàng:</strong> Nền tảng $47 + (50 × $0.59) = $76.50/tháng</li>
 </ul>
-</li>
-<li>
-<p><strong>Writes</strong>: ~800K requests/tháng = $1.00/tháng.</p>
+<p><strong>Lưu ý mở rộng:</strong> Với EC2 t3.micro, nền tảng có thể hỗ trợ hiệu quả 10-20 khách hàng. Để mở rộng đến 50+ khách hàng, khuyến nghị nâng cấp lên các instances lớn hơn (t3.small/medium). Kiến trúc ALB làm cho việc mở rộng theo chiều ngang trở nên đơn giản bằng cách thêm instances vào target group.</p>
+<h3 id="tối-ưu-hóa-trong-tương-lai">Tối ưu hóa trong tương lai:</h3>
 <ul>
-<li>Metrics: 500K writes ($0.625).</li>
-<li>Costs: 100K writes ($0.125).</li>
-<li>Security: 100K writes ($0.125).</li>
-<li>Recommendations: 100K writes ($0.125).</li>
+<li><strong>Reserved Instances:</strong> Tiết kiệm 30-40% trên EC2 (sau 12 tháng)</li>
+<li><strong>Savings Plans:</strong> Giảm giá linh hoạt dựa trên cam kết</li>
+<li><strong>Spot Instances:</strong> Cho các tác vụ nền không quan trọng (tiết kiệm 70-90%)</li>
+<li><strong>S3 Intelligent-Tiering:</strong> Tối ưu chi phí tự động cho backups</li>
+<li><strong>Tối ưu CloudWatch Logs:</strong> Điều chỉnh retention (7-90 ngày)</li>
 </ul>
-</li>
-<li>
-<p><strong>Reads</strong>: ~4M requests/tháng = $2.00/tháng.</p>
+<h3 id="tổng-đầu-tư-hạ-tầng">Tổng đầu tư hạ tầng:</h3>
 <ul>
-<li>Distributed across 4 tables.</li>
+<li><strong>Năm 1:</strong> $39-49/tháng (với free tier EC2 + Elastic IP)</li>
+<li><strong>Năm 2+:</strong> $47-57/tháng (giá đầy đủ, Elastic IP vẫn MIỄN PHÍ)</li>
+<li><strong>Mỗi khách hàng:</strong> $0.59/tháng (có thể mở rộng và dự đoán được)</li>
 </ul>
-</li>
-<li>
-<p><strong>GSI</strong>: Included in on-demand pricing.</p>
-</li>
-<li>
-<p><strong>Backup</strong>: Free (Point-in-time recovery).</p>
-</li>
-<li>
-<p><strong>Tổng DynamoDB</strong>: $4-7/tháng.</p>
-</li>
-</ul>
-<p><strong>Note:</strong> Chi phí có thể tăng nếu:</p>
-<ul>
-<li>Thu thập metrics frequency cao hơn.</li>
-<li>Nhiều AWS services được monitor.</li>
-<li>Retention period dài hơn.</li>
-<li>GuardDuty enabled ($4-6/tháng thêm).</li>
-<li>Nhiều security findings và recommendations.</li>
-</ul>
-<p><strong>Cost Optimization Strategies:</strong></p>
-<ul>
-<li>Sử dụng Free Tier tối đa (12 tháng).</li>
-<li>DynamoDB on-demand thay vì provisioned.</li>
-<li>TTL tự động xóa data cũ cho từng table.</li>
-<li>Redis caching giảm DynamoDB reads.</li>
-<li>CloudWatch log retention 7 ngày.</li>
-<li>Disable unused AWS services monitoring.</li>
-<li>Batch writes khi possible.</li>
-<li>Efficient query patterns với GSI.</li>
-</ul>
-<h3 id="7-đánh-giá-rủi-ro">7. Đánh giá rủi ro.</h3>
-<p><strong>Ma trận rủi ro:</strong></p>
+<p>Đây là giá trị đặc biệt cho một nền tảng SaaS đa khách hàng cấp production, highly available, an toàn với hạ tầng IP tĩnh.</p>
+<hr>
+<h2 id="7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</h2>
 <table>
   <thead>
       <tr>
           <th>Rủi ro</th>
-          <th>Mức độ ảnh hưởng</th>
+          <th>Tác động</th>
           <th>Xác suất</th>
-          <th>Mức độ rủi ro</th>
+          <th>Giảm thiểu</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Chi phí vượt ngân sách</td>
+          <td>Vượt ngân sách</td>
           <td>Trung bình</td>
+          <td>Thấp</td>
+          <td>Cảnh báo ngân sách AWS, Redis caching, DynamoDB on-demand, giám sát chi phí ALB, giữ Elastic IP được gắn (MIỄN PHÍ)</td>
+      </tr>
+      <tr>
+          <td>Chi phí ALB vượt ước tính</td>
           <td>Trung bình</td>
-          <td>Trung bình</td>
+          <td>Thấp</td>
+          <td>Giám sát sử dụng LCU, tối ưu cho single AZ (dev), CloudWatch cost alarms</td>
+      </tr>
+      <tr>
+          <td>Phí Elastic IP</td>
+          <td>Thấp</td>
+          <td>Rất thấp</td>
+          <td>Giữ EC2 chạy 24/7, giám sát trạng thái gắn, CloudWatch alarm nếu bị tháo</td>
       </tr>
       <tr>
           <td>EC2 downtime</td>
           <td>Cao</td>
+          <td>Rất thấp</td>
+          <td>ALB health checks, systemd auto-restart, failover tự động, Elastic IP cho phép phục hồi nhanh, mục tiêu uptime 99.5%</td>
+      </tr>
+      <tr>
+          <td>Cấu hình sai ALB</td>
+          <td>Cao</td>
           <td>Thấp</td>
+          <td>Xác thực health check, kiểm tra target group, xác thực triển khai CodeBuild</td>
+      </tr>
+      <tr>
+          <td>Chứng chỉ SSL hết hạn</td>
           <td>Trung bình</td>
+          <td>Rất thấp</td>
+          <td>ACM auto-renewal (60 ngày trước khi hết hạn), CloudWatch alarms</td>
+      </tr>
+      <tr>
+          <td>Địa chỉ IP thay đổi</td>
+          <td>Thấp</td>
+          <td>Rất thấp</td>
+          <td>Elastic IP ngăn thay đổi IP, bền vững qua các lần khởi động lại</td>
+      </tr>
+      <tr>
+          <td>Mất truy cập SSH</td>
+          <td>Trung bình</td>
+          <td>Rất thấp</td>
+          <td>Elastic IP cung cấp SSH endpoint ổn định, truy cập dự phòng qua ALB</td>
+      </tr>
+      <tr>
+          <td>Bảo mật dữ liệu khách hàng</td>
+          <td>Cao</td>
+          <td>Thấp</td>
+          <td>Secrets Manager + KMS, IAM least privilege, audit logging, ALB access logs</td>
+      </tr>
+      <tr>
+          <td>Thất bại pipeline CI/CD</td>
+          <td>Trung bình</td>
+          <td>Thấp</td>
+          <td>Logic retry CodeBuild, rollback triển khai, cổng health check, SSH qua Elastic IP cho sửa thủ công</td>
+      </tr>
+      <tr>
+          <td>Thất bại Redis cache</td>
+          <td>Trung bình</td>
+          <td>Thấp</td>
+          <td>Giám sát systemd, auto-restart, giảm xuống DynamoDB một cách graceful</td>
+      </tr>
+      <tr>
+          <td>Hot partitions DynamoDB</td>
+          <td>Trung bình</td>
+          <td>Thấp</td>
+          <td>Thiết kế partition key hợp lý, sharding aws_account_id</td>
+      </tr>
+      <tr>
+          <td>Chi phí Secrets Manager</td>
+          <td>Trung bình</td>
+          <td>Trung bình</td>
+          <td>Giám sát sử dụng, đánh giá các mẫu secret chung trong tương lai</td>
+      </tr>
+      <tr>
+          <td>Vấn đề gửi email</td>
+          <td>Trung bình</td>
+          <td>Thấp</td>
+          <td>Giám sát AWS SES, logic retry, thông báo dự phòng</td>
+      </tr>
+      <tr>
+          <td>Lỗ hổng bảo mật trong deps</td>
+          <td>Cao</td>
+          <td>Trung bình</td>
+          <td>Scanner Safety trong CI/CD, cập nhật tự động, cảnh báo bảo mật</td>
       </tr>
       <tr>
           <td>Scope creep</td>
           <td>Trung bình</td>
           <td>Cao</td>
-          <td>Cao</td>
+          <td>Định nghĩa MVP nghiêm ngặt, đóng băng tính năng tuần 8, kế hoạch Phase 2</td>
       </tr>
       <tr>
-          <td>Technical complexity</td>
-          <td>Trung bình</td>
-          <td>Trung bình</td>
-          <td>Trung bình</td>
-      </tr>
-      <tr>
-          <td>AWS API rate limits</td>
-          <td>Thấp</td>
-          <td>Trung bình</td>
-          <td>Thấp</td>
-      </tr>
-      <tr>
-          <td>DynamoDB hot partitions</td>
+          <td>Health check false positives</td>
           <td>Thấp</td>
           <td>Thấp</td>
-          <td>Thấp</td>
-      </tr>
-      <tr>
-          <td>Team coordination</td>
-          <td>Trung bình</td>
-          <td>Trung bình</td>
-          <td>Trung bình</td>
+          <td>Điều chỉnh ngưỡng health check (2 lần thất bại trước khi không khỏe mạnh)</td>
       </tr>
   </tbody>
 </table>
-<p><strong>Chiến lược giảm thiểu:</strong></p>
-<ol>
-<li>
-<p><strong>Chi phí</strong>:</p>
-<ul>
-<li>AWS Budget alerts tại $15, $20.</li>
-<li>Daily cost monitoring trong Cost Explorer.</li>
-<li>DynamoDB on-demand (không bị surprise bills).</li>
-<li>Monitor DynamoDB costs per table.</li>
-<li>Weekly cost review meetings.</li>
-<li>Kill switch để disable data collection nếu vượt budget.</li>
-</ul>
-</li>
-<li>
-<p><strong>EC2 Availability</strong>:</p>
-<ul>
-<li>CloudWatch alarms cho health checks.</li>
-<li>Systemd auto-restart services.</li>
-<li>Health check endpoint.</li>
-<li>Backup và recovery procedures documented.</li>
-<li>Target: 98-99% uptime (realistic cho single instance).</li>
-</ul>
-</li>
-<li>
-<p><strong>Scope Creep</strong>:</p>
-<ul>
-<li>Strict MVP definition.</li>
-<li>Feature freeze sau week 8.</li>
-<li>&ldquo;Nice to have&rdquo; list cho Phase 2.</li>
-<li>Weekly standup để track progress.</li>
-<li>Prioritize must-have features.</li>
-<li>Document 4-table design clearly.</li>
-</ul>
-</li>
-<li>
-<p><strong>Technical Complexity</strong>:</p>
-<ul>
-<li>Start với simplest solution.</li>
-<li>Extensive use of AWS documentation.</li>
-<li>Code review process.</li>
-<li>Technical spikes cho unknown areas.</li>
-<li>DynamoDB data modeling workshops.</li>
-<li>Mentor consultation when stuck.</li>
-</ul>
-</li>
-<li>
-<p><strong>API Rate Limits</strong>:</p>
-<ul>
-<li>Implement exponential backoff.</li>
-<li>Cache aggressively với Redis.</li>
-<li>Monitor API usage.</li>
-<li>Stay within free tier limits.</li>
-<li>Batch operations when possible.</li>
-</ul>
-</li>
-<li>
-<p><strong>DynamoDB Hot Partitions</strong>:</p>
-<ul>
-<li>Proper partition key design.</li>
-<li>Write sharding cho high-traffic tables.</li>
-<li>Monitor CloudWatch metrics cho throttling.</li>
-<li>Use GSI efficiently.</li>
-</ul>
-</li>
-<li>
-<p><strong>Team Coordination</strong>:</p>
-<ul>
-<li>Daily standups (15 minutes).</li>
-<li>Clear task assignments.</li>
-<li>Git workflow (feature branches, PRs).</li>
-<li>Documentation from day 1.</li>
-<li>Shared knowledge base.</li>
-<li>DynamoDB schema documentation.</li>
-</ul>
-</li>
-</ol>
-<p><strong>Kế hoạch dự phòng:</strong></p>
-<ol>
-<li>
-<p><strong>Service Failure</strong>: Systemd auto-restart, documented manual recovery.</p>
-</li>
-<li>
-<p><strong>Data Loss</strong>: Daily S3 backups, DynamoDB PITR enabled.</p>
-</li>
-<li>
-<p><strong>Cost Spike</strong>: Immediate notification, manual review, throttle data collection.</p>
-</li>
-<li>
-<p><strong>Behind Schedule</strong>: Cut Phase 2 features, focus on MVP only.</p>
-</li>
-<li>
-<p><strong>DynamoDB Issues</strong>: Fallback to direct API calls, reduce write frequency.</p>
-</li>
-</ol>
-<h3 id="8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng.</h3>
-<p><strong>Technical Deliverables:</strong></p>
-<ol>
-<li>
-<p><strong>Working Dashboard:</strong></p>
-<ul>
-<li>4 main pages: Metrics, Costs, Security, Recommendations.</li>
-<li>Real data từ AWS services.</li>
-<li>Responsive design.</li>
-<li>Basic authentication.</li>
-</ul>
-</li>
-<li>
-<p><strong>Data Collection System:</strong></p>
-<ul>
-<li>Background jobs collecting metrics mỗi 5 phút.</li>
-<li>Cost data updated daily.</li>
-<li>Security findings updated hourly.</li>
-<li>Recommendations generated daily.</li>
-<li>Data stored in 4 specialized DynamoDB tables.</li>
-</ul>
-</li>
-<li>
-<p><strong>Performance:</strong></p>
-<ul>
-<li>Cached response time: &lt; 300ms (60-80% requests).</li>
-<li>Uncached response time: &lt; 2 seconds.</li>
-<li>DynamoDB query time: 10-25ms (typical).</li>
-<li>GSI query time: 15-30ms.</li>
-<li>Target uptime: 98-99% (single instance).</li>
-</ul>
-</li>
-<li>
-<p><strong>Cost Analysis:</strong></p>
-<ul>
-<li>Historical cost trends.</li>
-<li>Service breakdown charts.</li>
-<li>AWS Cost Explorer recommendations display.</li>
-<li>Budget alerts.</li>
-<li>Cost forecasting.</li>
-</ul>
-</li>
-<li>
-<p><strong>Security Visibility:</strong></p>
-<ul>
-<li>Security Hub findings dashboard.</li>
-<li>GuardDuty threat detection.</li>
-<li>Severity-based filtering using GSI.</li>
-<li>Real-time alerts cho critical findings.</li>
-<li>Compliance status overview.</li>
-</ul>
-</li>
-<li>
-<p><strong>Recommendations System:</strong></p>
-<ul>
-<li>Cost optimization suggestions.</li>
-<li>Performance improvement recommendations.</li>
-<li>Security enhancement suggestions.</li>
-<li>Impact-based prioritization using GSI.</li>
-<li>Implementation tracking.</li>
-</ul>
-</li>
-</ol>
-<p><strong>Learning Outcomes:</strong></p>
-<ol>
-<li>
-<p><strong>AWS Services:</strong></p>
-<ul>
-<li>Hands-on experience với EC2, DynamoDB (advanced), CloudWatch.</li>
-<li>Cost Explorer API integration.</li>
-<li>Security Hub và GuardDuty understanding.</li>
-<li>IAM roles và policies.</li>
-<li>VPC networking basics.</li>
-<li>DynamoDB data modeling best practices.</li>
-</ul>
-</li>
-<li>
-<p><strong>Full-Stack Development:</strong></p>
-<ul>
-<li>FastAPI backend development.</li>
-<li>React frontend development.</li>
-<li>RESTful API design.</li>
-<li>NoSQL database design patterns.</li>
-<li>DynamoDB access patterns và GSI optimization.</li>
-<li>Caching strategies.</li>
-</ul>
-</li>
-<li>
-<p><strong>DevOps:</strong></p>
-<ul>
-<li>Linux server administration.</li>
-<li>Nginx configuration.</li>
-<li>Service management với systemd.</li>
-<li>SSL/TLS setup.</li>
-<li>Monitoring và logging.</li>
-<li>Database backup strategies.</li>
-</ul>
-</li>
-<li>
-<p><strong>Best Practices:</strong></p>
-<ul>
-<li>Security-first design.</li>
-<li>Cost optimization.</li>
-<li>Code organization.</li>
-<li>Documentation.</li>
-<li>Testing strategies.</li>
-<li>NoSQL data modeling.</li>
-</ul>
-</li>
-</ol>
-<p><strong>Portfolio Value:</strong></p>
-<p>Project này demonstrate:</p>
-<ul>
-<li>Real AWS production experience.</li>
-<li>Advanced DynamoDB data modeling (4 tables, GSI).</li>
-<li>Full-stack development skills.</li>
-<li>Cost-aware architecture decisions.</li>
-<li>Security consciousness.</li>
-<li>Realistic project scoping.</li>
-<li>Team collaboration.</li>
-<li>Professional documentation.</li>
-</ul>
-<p><strong>Limitations &amp; Trade-offs:</strong></p>
-<p>Documented limitations:</p>
-<ul>
-<li>Single instance <strong>(không high availability)</strong>.</li>
-<li>Public subnet <strong>(không private network isolation)</strong>.</li>
-<li>Rule-based recommendations <strong>(không ML-powered initially)</strong>.</li>
-<li>Manual AWS service additions.</li>
-<li>Limited to AWS <strong>(không multi-cloud)</strong>.</li>
-</ul>
-<p>Documented trade-offs:</p>
-<ul>
-<li>4 tables tăng complexity và cost ($2-3/tháng) nhưng cải thiện performance và maintainability.</li>
-<li>Public subnet giảm security nhưng tiết kiệm $33/tháng.</li>
-<li>Single instance giảm availability nhưng phù hợp với budget constraint.</li>
-</ul>
-<p>Những limitations và trade-offs này là conscious decisions cho cost efficiency và project timeline, demonstrating
-real-world engineering judgment.</p>
 <hr>
-<p><strong>A. Links:</strong></p>
+<h2 id="8-kết-quả-mong-đợi">8. Kết quả mong đợi</h2>
+<h3 id="sản-phẩm-kỹ-thuật">Sản phẩm kỹ thuật</h3>
+<h4 id="hạ-tầng-cấp-production-2">Hạ tầng cấp Production:</h4>
 <ul>
-<li><a href="https://github.com/Unvianpetronas/Cloud_health_dashboard">GitHub Repository</a></li>
+<li>Application Load Balancer với SSL/TLS termination</li>
+<li>Elastic IP cho truy cập SSH ổn định và IP whitelisting (MIỄN PHÍ)</li>
+<li>Chứng chỉ được quản lý bởi ACM với gia hạn tự động</li>
+<li>Health checks với khả năng failover tự động</li>
+<li>Triển khai zero-downtime sử dụng target groups</li>
+<li>Sẵn sàng mở rộng theo chiều ngang (có khả năng multi-instance)</li>
+<li>SLA uptime 99.99% của ALB</li>
 </ul>
-<p><strong>B. Liên hệ:</strong></p>
+<h4 id="nền-tảng-devsecops">Nền tảng DevSecOps:</h4>
 <ul>
-<li><strong>Project Leader:</strong> Trương Quốc Tuấn</li>
-<li><strong>Email:</strong>** <a href="mailto:unviantruong26@gmail.com">unviantruong26@gmail.com</a></li>
-<li><strong>WhatsApp:</strong> 0798806545</li>
+<li>Pipeline CI/CD tự động (GitHub → CodePipeline → CodeBuild → EC2 qua Elastic IP)</li>
+<li>Quét bảo mật tự động (Bandit SAST, Safety dependency scan)</li>
+<li>Chiến lược triển khai blue-green qua ALB</li>
+<li>Giám sát CloudWatch và CloudTrail audit logging</li>
+<li>AWS Secrets Manager cho lưu trữ thông tin xác thực</li>
+<li>Mã hóa KMS cho tất cả dữ liệu nhạy cảm</li>
+<li>Lớp caching Redis trên EC2</li>
 </ul>
-<pre tabindex="0"><code>
----
-</code></pre>
+<h4 id="saas-đa-khách-hàng">SaaS đa khách hàng:</h4>
+<ul>
+<li>Đăng ký khách hàng với xác thực email</li>
+<li>5 bảng DynamoDB với cô lập dữ liệu hợp lý</li>
+<li>Hệ thống lập lịch task để thu thập dữ liệu (demo với 3-5 khách hàng)</li>
+<li>Dashboard giám sát theo thời gian thực cho mỗi khách hàng</li>
+<li>Hệ thống thông báo email</li>
+<li>Trang Settings với quản lý email/thông báo</li>
+</ul>
+<h4 id="mục-tiêu-hiệu-suất">Mục tiêu hiệu suất:</h4>
+<ul>
+<li><strong>Thời gian phản hồi API:</strong> Mục tiêu &lt;200ms (Redis cache HIT), &lt;2s (cache MISS)</li>
+<li><strong>Thời gian phản hồi ALB:</strong> Thêm &lt;50ms latency (SSL termination + routing)</li>
+<li><strong>Truy cập SSH:</strong> Truy cập trực tiếp qua Elastic IP cho triển khai và khắc phục sự cố</li>
+<li><strong>Gửi email:</strong> &lt;30 giây (chế độ sandbox SES, yêu cầu xác thực email)</li>
+<li><strong>Thu thập dữ liệu:</strong> Mỗi 15 phút cho mỗi khách hàng</li>
+<li><strong>Uptime nền tảng:</strong> Mục tiêu 99.5%+ (SLA 99.99% ALB + EC2 với health checks)</li>
+<li><strong>Khoảng health check:</strong> 30 giây (2 lần thất bại liên tiếp = không khỏe mạnh)</li>
+<li><strong>Thời gian triển khai:</strong> &lt;5 phút (zero downtime với blue-green)</li>
+<li><strong>Thời gian build:</strong> Mục tiêu &lt;5 phút (trong giới hạn free tier)</li>
+</ul>
+<h4 id="bảo-mật--tuân-thủ">Bảo mật &amp; Tuân thủ:</h4>
+<ul>
+<li>Zero thông tin xác thực trong code hoặc biến môi trường</li>
+<li>Tất cả secrets được mã hóa với KMS</li>
+<li>Mã hóa SSL/TLS end-to-end (Cloudflare → ALB → EC2)</li>
+<li>Elastic IP ổn định cho truy cập SSH (không có thay đổi IP động)</li>
+<li>Xác thực email trước các cảnh báo quan trọng</li>
+<li>Audit trail API hoàn chỉnh (CloudTrail)</li>
+<li>ALB access logs có sẵn (tùy chọn, cho compliance)</li>
+<li>Cô lập dữ liệu giữa các khách hàng</li>
+<li>IAM roles least privilege</li>
+<li>Quét bảo mật tự động trong CI/CD</li>
+</ul>
+<h3 id="kết-quả-học-tập">Kết quả học tập</h3>
+<h4 id="thành-thạo-hạ-tầng-production">Thành thạo hạ tầng Production:</h4>
+<ul>
+<li>Cấu hình và quản lý Application Load Balancer</li>
+<li>Phân bổ và quản lý Elastic IP (tối ưu chi phí)</li>
+<li>Quản lý chứng chỉ SSL/TLS với ACM</li>
+<li>Cấu hình health checks và target group</li>
+<li>Chiến lược triển khai zero-downtime</li>
+<li>Các mẫu kiến trúc high availability</li>
+<li>Bảo mật mạng với Security Groups</li>
+<li>Quản lý IP tĩnh cho sự ổn định production</li>
+</ul>
+<h4 id="thành-thạo-devsecops">Thành thạo DevSecOps:</h4>
+<ul>
+<li>Thiết kế và triển khai pipeline CI/CD</li>
+<li>Quét bảo mật tự động (SAST, quét dependency)</li>
+<li>Triển khai blue-green</li>
+<li>Các phương pháp hay nhất về quản lý secrets</li>
+<li>Audit logging và tuân thủ</li>
+<li>Giám sát và cảnh báo</li>
+<li>Chiến lược triển khai tự động</li>
+<li>Triển khai dựa trên SSH qua IP ổn định</li>
+</ul>
+<h4 id="thành-thạo-các-dịch-vụ-aws">Thành thạo các dịch vụ AWS:</h4>
+<ul>
+<li>DynamoDB nâng cao (multi-tenant, GSI, TTL)</li>
+<li>Cấu hình Application Load Balancer (ALB)</li>
+<li>Phân bổ Elastic IP và các phương pháp hay nhất</li>
+<li>Tích hợp AWS Certificate Manager (ACM)</li>
+<li>Tích hợp AWS Secrets Manager + KMS</li>
+<li>CloudWatch + CloudTrail</li>
+<li>CodePipeline + CodeBuild</li>
+<li>Tích hợp AWS SES</li>
+<li>IAM roles và policies</li>
+<li>VPC networking và Security Groups</li>
+</ul>
+<h4 id="kiến-trúc-saas">Kiến trúc SaaS:</h4>
+<ul>
+<li>Mô hình hóa dữ liệu đa khách hàng</li>
+<li>Điều phối tác vụ nền</li>
+<li>Quản lý thông tin xác thực an toàn</li>
+<li>Chiến lược caching (Redis)</li>
+<li>Hệ thống thông báo email</li>
+<li>Thiết kế hạ tầng có thể mở rộng</li>
+<li>Các mẫu hạ tầng IP tĩnh</li>
+</ul>
+<h4 id="phát-triển-full-stack">Phát triển Full-Stack:</h4>
+<ul>
+<li>Lập trình async FastAPI</li>
+<li>Quản lý state React</li>
+<li>Tích hợp Redis</li>
+<li>Phát triển ưu tiên bảo mật</li>
+<li>Thiết kế RESTful API</li>
+<li>Triển khai health check endpoint</li>
+</ul>
+<h3 id="giá-trị-portfolio">Giá trị Portfolio</h3>
+<p>Dự án này chứng minh:</p>
+<h4 id="hạ-tầng-cấp-production-3">Hạ tầng cấp Production</h4>
+<ul>
+<li>Application Load Balancer cho high availability</li>
+<li>Elastic IP cho hạ tầng ổn định (tối ưu MIỄN PHÍ)</li>
+<li>SSL/TLS termination với chứng chỉ ACM</li>
+<li>Khả năng triển khai zero-downtime</li>
+<li>Health checks với failover tự động</li>
+<li>Sẵn sàng mở rộng theo chiều ngang</li>
+</ul>
+<h4 id="triển-khai-devsecops-1">Triển khai DevSecOps</h4>
+<ul>
+<li>Pipeline CI/CD tự động với quét bảo mật</li>
+<li>Chiến lược triển khai blue-green</li>
+<li>Quản lý secrets với AWS Secrets Manager + KMS</li>
+<li>Giám sát và logging toàn diện</li>
+<li>Triển khai tự động với xác thực health</li>
+<li>Triển khai SSH qua Elastic IP tĩnh</li>
+</ul>
+<h4 id="kiến-trúc-doanh-nghiệp">Kiến trúc doanh nghiệp</h4>
+<ul>
+<li>Thiết kế SaaS đa khách hàng có thể mở rộng</li>
+<li>Hạ tầng có thể mở rộng (MVP đã test với 3-5, được thiết kế cho 10-50+ khách hàng)</li>
+<li>Lớp caching Redis</li>
+<li>Hệ thống lập lịch tác vụ nền</li>
+<li>Các mẫu bảo mật sẵn sàng production</li>
+<li>Hạ tầng tối ưu chi phí (Elastic IP MIỄN PHÍ)</li>
+</ul>
+<h4 id="chuyên-môn-bảo-mật">Chuyên môn bảo mật</h4>
+<ul>
+<li>Zero secrets trong code</li>
+<li>Mã hóa end-to-end (Cloudflare → ALB → EC2)</li>
+<li>Mã hóa KMS</li>
+<li>CloudTrail audit logging</li>
+<li>Quét lỗ hổng tự động</li>
+<li>Bảo mật đa lớp (network + application + infrastructure)</li>
+<li>IP ổn định cho truy cập SSH an toàn</li>
+</ul>
+<h4 id="thành-thạo-aws">Thành thạo AWS</h4>
+<ul>
+<li>17+ dịch vụ AWS được tích hợp (thêm ALB + Elastic IP + ACM)</li>
+<li>Thiết kế tối ưu chi phí (Elastic IP MIỄN PHÍ khi được gắn)</li>
+<li>Tối đa hóa free tier</li>
+<li>Các phương pháp hay nhất về IAM</li>
+<li>Kiến trúc high availability</li>
+<li>Quản lý IP tĩnh</li>
+</ul>
+<h4 id="hiệu-quả-chi-phí">Hiệu quả chi phí</h4>
+<ul>
+<li>$39-49/tháng cho nền tảng (Năm 1)</li>
+<li>$0.59/khách hàng/tháng tăng thêm</li>
+<li>Redis caching để tối ưu chi phí đọc</li>
+<li>Elastic IP MIỄN PHÍ (tiết kiệm $3.65/tháng cho mỗi IP)</li>
+<li>Chi phí ALB hợp lý cho các tính năng cấp production</li>
+</ul>
+<h3 id="các-yếu-tố-khác-biệt-chính">Các yếu tố khác biệt chính:</h3>
+<ul>
+<li>Hạ tầng cấp production với ALB, Elastic IP và ACM (không chỉ EC2 cơ bản)</li>
+<li>Khả năng triển khai zero-downtime (chiến lược blue-green)</li>
+<li>SLA uptime 99.99% qua ALB</li>
+<li>Hạ tầng IP ổn định với Elastic IP MIỄN PHÍ</li>
+<li>Tối ưu chi phí (Elastic IP được gắn = $0)</li>
+<li>Pipeline DevSecOps tự động với cổng bảo mật</li>
+<li>Bảo mật cấp production (Secrets Manager + KMS + ACM)</li>
+<li>CI/CD tự động với testing tự động</li>
+<li>Kiến trúc đa khách hàng với cô lập dữ liệu</li>
+<li>Giám sát và audit logging toàn diện</li>
+<li>Sẵn sàng mở rộng theo chiều ngang (chứng minh hiểu biết về tăng trưởng)</li>
+</ul>
+<hr>
+<h2 id="9-kết-luận">9. Kết luận</h2>
+<p>AWS Cloud Health Dashboard là một nền tảng SaaS đa khách hàng cấp production với các phương pháp DevSecOps tự động chứng minh:</p>
+<h3 id="hạ-tầng-production">Hạ tầng Production</h3>
+<ul>
+<li>Application Load Balancer cho high availability và quản lý traffic</li>
+<li>Elastic IP cho địa chỉ IP ổn định, bền vững (MIỄN PHÍ khi được gắn)</li>
+<li>SSL/TLS termination với AWS Certificate Manager</li>
+<li>Health checks với failover tự động</li>
+<li>Khả năng triển khai zero-downtime</li>
+<li>Sẵn sàng mở rộng theo chiều ngang</li>
+<li>SLA uptime 99.99% của ALB</li>
+</ul>
+<h3 id="triển-khai-devsecops-2">Triển khai DevSecOps</h3>
+<ul>
+<li>Pipeline CI/CD tự động (CodePipeline + CodeBuild)</li>
+<li>Quét bảo mật trước mỗi triển khai</li>
+<li>Chiến lược triển khai blue-green</li>
+<li>Triển khai SSH qua Elastic IP ổn định</li>
+<li>Quản lý secrets với AWS Secrets Manager + KMS</li>
+<li>Giám sát toàn diện (CloudWatch + CloudTrail)</li>
+</ul>
+<h3 id="kiến-trúc-doanh-nghiệp-1">Kiến trúc doanh nghiệp</h3>
+<ul>
+<li>Thiết kế đa khách hàng có thể mở rộng (MVP đã test với 3-5, được thiết kế cho 10-50+ khách hàng)</li>
+<li>Hệ thống lập lịch task có thể mở rộng</li>
+<li>Redis caching cho hiệu suất</li>
+<li>Cô lập dữ liệu hoàn toàn</li>
+<li>Các mẫu hạ tầng sẵn sàng production</li>
+<li>Thiết kế tối ưu chi phí (Elastic IP MIỄN PHÍ)</li>
+</ul>
+<h3 id="thiết-kế-ưu-tiên-bảo-mật">Thiết kế ưu tiên bảo mật</h3>
+<ul>
+<li>Zero secrets trong code hoặc config files</li>
+<li>Mã hóa end-to-end (Cloudflare → ALB → EC2)</li>
+<li>Mã hóa KMS cho tất cả dữ liệu nhạy cảm</li>
+<li>CloudTrail audit logging</li>
+<li>Quét lỗ hổng tự động</li>
+<li>Kiến trúc bảo mật đa lớp</li>
+<li>Truy cập SSH ổn định qua Elastic IP</li>
+</ul>
+<h3 id="chuyên-môn-aws">Chuyên môn AWS</h3>
+<ul>
+<li>Tích hợp sâu với 17+ dịch vụ AWS</li>
+<li>Hạ tầng tối ưu chi phí ($39-49/tháng Năm 1)</li>
+<li>Tối ưu chi phí Elastic IP (MIỄN PHÍ vs $3.65/tháng)</li>
+<li>Các phương pháp hay nhất về bảo mật</li>
+<li>Hệ thống thông báo email (SES)</li>
+<li>Kiến trúc high availability</li>
+</ul>
+<h3 id="nhạy-bén-kinh-doanh">Nhạy bén kinh doanh</h3>
+<ul>
+<li>Hoạt động hiệu quả chi phí với các tính năng cấp production</li>
+<li>Mô hình giá có thể mở rộng ($0.59/khách hàng/tháng)</li>
+<li>Các tính năng SaaS chuyên nghiệp</li>
+<li>ROI rõ ràng cho khách hàng</li>
+<li>Đầu tư hạ tầng hợp lý</li>
+</ul>
+<h3 id="lý-do-đầu-tư">Lý do đầu tư:</h3>
+<p>Chi phí ~$16/tháng cho ALB + $0/tháng cho Elastic IP (MIỄN PHÍ) được lý do hóa một cách chiến lược:</p>
+<ul>
+<li>Chuyển đổi dự án từ demo thành portfolio piece cấp production</li>
+<li>Chứng minh các mẫu kiến trúc doanh nghiệp</li>
+<li>Cho phép triển khai zero-downtime</li>
+<li>Cung cấp SLA uptime 99.99%</li>
+<li>Thể hiện khả năng sẵn sàng mở rộng (quan trọng cho các vai trò DevOps/SRE)</li>
+<li>Chứng minh hiểu biết về chiến lược high availability và failover</li>
+<li>Elastic IP thêm sự ổn định production với chi phí bằng không</li>
+<li>Thể hiện kỹ năng tối ưu chi phí (giữ Elastic IP được gắn = MIỄN PHÍ)</li>
+</ul>
+<p><strong>Thời gian:</strong> 3 tháng | <strong>Nhóm:</strong> 4 người | <strong>Ngân sách:</strong> $39-49/tháng (Năm 1), $47-57/tháng (Năm 2+)</p>
+<p>Dự án này chứng minh triển khai hạ tầng cấp production và các phương pháp DevSecOps, làm cho nó trở thành một portfolio piece hấp dẫn cho các vai trò cloud engineering, DevOps và SRE.</p>
+<hr>
+<h2 id="phụ-lục">Phụ lục</h2>
+<h3 id="a-các-dịch-vụ-sử-dụng-17-dịch-vụ-aws---cấp-production">A. Các dịch vụ sử dụng (17 dịch vụ AWS - Cấp Production):</h3>
+<ol>
+<li><strong>Application Load Balancer (ALB)</strong> - Phân phối traffic &amp; high availability</li>
+<li><strong>Elastic IP</strong> - Địa chỉ IPv4 public tĩnh (MIỄN PHÍ khi được gắn vào EC2 đang chạy)</li>
+<li><strong>AWS Certificate Manager (ACM)</strong> - Quản lý chứng chỉ SSL/TLS (MIỄN PHÍ cho ALB)</li>
+<li><strong>EC2</strong> (Compute)</li>
+<li><strong>DynamoDB</strong> (Database)</li>
+<li><strong>AWS Secrets Manager</strong> (Lưu trữ thông tin xác thực)</li>
+<li><strong>AWS KMS</strong> (Mã hóa)</li>
+<li><strong>CloudWatch</strong> (Giám sát)</li>
+<li><strong>CloudTrail</strong> (Audit logging)</li>
+<li><strong>CodePipeline</strong> (CI/CD)</li>
+<li><strong>CodeBuild</strong> (Automated builds)</li>
+<li><strong>SES</strong> (Email)</li>
+<li><strong>S3</strong> (Backup &amp; ALB logs)</li>
+<li><strong>VPC</strong> (Networking)</li>
+<li><strong>Internet Gateway</strong> (Kết nối)</li>
+<li><strong>Security Groups</strong> (Firewall)</li>
+<li><strong>IAM</strong> (Quản lý truy cập)</li>
+<li><strong>Shield Standard</strong> (Bảo vệ DDoS - tự động)</li>
+</ol>
+<h3 id="b-cải-tiến-kiến-trúc-từ-alb--elastic-ip">B. Cải tiến kiến trúc từ ALB + Elastic IP:</h3>
+<ul>
+<li><strong>High Availability:</strong> SLA uptime 99.99%</li>
+<li><strong>Triển khai Zero-Downtime:</strong> Chiến lược blue-green với target groups</li>
+<li><strong>SSL/TLS Termination:</strong> Giảm tải mã hóa từ EC2</li>
+<li><strong>Health Checks:</strong> Khả năng failover tự động</li>
+<li><strong>Mở rộng theo chiều ngang:</strong> Sẵn sàng thêm nhiều EC2 instances</li>
+<li><strong>Bảo vệ DDoS:</strong> Tích hợp AWS Shield Standard</li>
+<li><strong>Hạ tầng IP ổn định:</strong> Elastic IP (MIỄN PHÍ khi được gắn)</li>
+<li><strong>Quản lý SSH:</strong> Truy cập đáng tin cậy qua Elastic IP cố định</li>
+<li><strong>IP Whitelisting:</strong> Cho phép tích hợp bên thứ ba</li>
+<li><strong>Tối ưu chi phí:</strong> Elastic IP MIỄN PHÍ (tiết kiệm $3.65/tháng)</li>
+<li><strong>Cấp Production:</strong> Mẫu hạ tầng sẵn sàng cho doanh nghiệp</li>
+</ul>
+<h3 id="c-chiến-thắng-tối-ưu-chi-phí">C. Chiến thắng tối ưu chi phí:</h3>
+<ul>
+<li><strong>Elastic IP:</strong> $0/tháng (MIỄN PHÍ khi được gắn) vs $3.65/tháng (idle)</li>
+<li><strong>ACM Certificate:</strong> $0/tháng (MIỄN PHÍ cho ALB) vs $0.75/tháng (chứng chỉ public)</li>
+<li><strong>Redis Caching:</strong> Giảm 60-80% chi phí đọc DynamoDB</li>
+<li><strong>Free Tier:</strong> EC2, CodePipeline, CodeBuild, S3, CloudWatch (Năm 1)</li>
+<li><strong>Kiến trúc hiệu quả:</strong> Single ALB + Elastic IP phục vụ tất cả khách hàng</li>
+</ul>
+<h3 id="d-github-repository">D. GitHub Repository</h3>
+<p><a href="https://github.com/Unvianpetronas/Cloud_health_dashboard">https://github.com/Unvianpetronas/Cloud_health_dashboard</a></p>
+<h3 id="e-domain">E. Domain</h3>
+<p>cloudhealthdashboard.xyz (Cloudflare DNS + CDN)</p>
+<h3 id="f-thông-tin-liên-hệ">F. Thông tin liên hệ</h3>
+<ul>
+<li><strong>Trưởng dự án:</strong> Trương Quốc Tuấn</li>
+<li><strong>Email:</strong> <a href="mailto:unviantruong26@gmail.com">unviantruong26@gmail.com</a></li>
+<li><strong>WhatsApp:</strong> +84 798806545</li>
+</ul>
+<hr>
+<p><em>Kết thúc tài liệu đề xuất</em></p>
+
 
 
 
@@ -2673,19 +2602,19 @@ real-world engineering judgment.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1764983713"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1764983713"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1764983713"></script>
-    <script src="../../js/jquery.sticky.js?1764983713"></script>
-    <script src="../../js/featherlight.min.js?1764983713"></script>
-    <script src="../../js/highlight.pack.js?1764983713"></script>
+    <script src="../../js/clipboard.min.js?1765006203"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765006203"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765006203"></script>
+    <script src="../../js/jquery.sticky.js?1765006203"></script>
+    <script src="../../js/featherlight.min.js?1765006203"></script>
+    <script src="../../js/highlight.pack.js?1765006203"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1764983713"></script>
-    <script src="../../js/learn.js?1764983713"></script>
-    <script src="../../js/hugo-learn.js?1764983713"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765006203"></script>
+    <script src="../../js/learn.js?1765006203"></script>
+    <script src="../../js/hugo-learn.js?1765006203"></script>
 
-    <link href="../../mermaid/mermaid.css?1764983713" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1764983713"></script>
+    <link href="../../mermaid/mermaid.css?1765006203" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765006203"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
