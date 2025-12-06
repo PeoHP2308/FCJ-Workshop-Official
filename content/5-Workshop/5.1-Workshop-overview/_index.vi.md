@@ -6,14 +6,26 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+# Xây dựng AWS VPC cơ bản với Public & Private Subnets
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+Trong workshop này, bạn sẽ xây dựng một nền tảng mạng đơn giản trên AWS bằng **Amazon VPC (Virtual Private Cloud)**.
+Mục tiêu là giúp người mới bắt đầu hiểu cách hoạt động của mạng trong môi trường điện toán đám mây, cũng như cách các
+thành phần khác nhau kết nối với nhau để tạo thành một hệ thống an toàn và có kiểm soát.
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+Bạn sẽ tạo một VPC với hai subnet:
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
++ **Public Subnet** – cho phép tài nguyên (như EC2 instances) truy cập Internet trực tiếp.
++ **Private Subnet** – cách ly với Internet công khai theo mặc định để đảm bảo bảo mật tốt hơn.
+
+Để cho phép private subnet có thể tải gói, cập nhật và sử dụng dịch vụ trực tuyến mà không bị lộ ra Internet công khai,
+bạn sẽ cấu hình:
+
++ **Internet Gateway (IGW)** – cho phép lưu lượng mạng từ Public Subnet đi/đến Internet.
++ **NAT Gateway** – cho phép các instance trong Private Subnet truy cập Internet *gián tiếp* mà không cần gán Public IP.
+
+Kết thúc workshop, bạn sẽ tạo hai EC2 instance — mỗi instance nằm trong một subnet — và kiểm tra khả năng kết nối giữa
+chúng, đồng thời quan sát vai trò của định tuyến và gateway.
+
+Workshop thực hành này hướng dẫn bạn tiếp cận các kiến thức nền tảng về AWS Networking thông qua các bước thao tác trực
+tiếp trên Console.
+Phù hợp cho người mới muốn xây dựng sự tự tin khi làm việc với VPC.
